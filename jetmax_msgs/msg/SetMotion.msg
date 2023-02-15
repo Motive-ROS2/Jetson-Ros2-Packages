@@ -1,2 +1,2 @@
-float64 angle
-float64 speed
+float32 angle
+float32 speed

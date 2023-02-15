@@ -38,6 +38,7 @@ find_package(rosidl_default_generators REQUIRED)
 # add any additional msgs/srv/actions created here:
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SetMotion.msg"
+  "msg/Position.msg"
   # add any dependencies here
 )
 
