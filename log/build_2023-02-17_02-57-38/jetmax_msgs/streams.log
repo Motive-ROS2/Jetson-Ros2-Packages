@@ -1,0 +1,132 @@
+[0.062s] Invoking command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy /usr/local/bin/cmake --build /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs -- -j4 -l4
+[0.156s] [  2%] Built target jetmax_msgs__cpp
+[0.160s] [ 12%] Built target jetmax_msgs__rosidl_generator_c
+[0.199s] [ 23%] Built target jetmax_msgs__rosidl_typesupport_cpp
+[0.200s] [ 33%] Built target jetmax_msgs__rosidl_typesupport_introspection_c
+[0.202s] [ 43%] Built target jetmax_msgs__rosidl_typesupport_fastrtps_cpp
+[0.202s] [ 53%] Built target jetmax_msgs__rosidl_typesupport_introspection_cpp
+[0.236s] [ 64%] Built target jetmax_msgs__rosidl_typesupport_c
+[0.243s] [ 74%] Built target jetmax_msgs__rosidl_typesupport_fastrtps_c
+[0.274s] [ 74%] Built target jetmax_msgs
+[0.305s] [ 76%] Built target jetmax_msgs__py
+[0.343s] [ 84%] Built target jetmax_msgs__python
+[0.380s] [ 89%] Built target jetmax_msgs__rosidl_typesupport_c__pyext
+[0.382s] [ 94%] Built target jetmax_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.393s] [100%] Built target jetmax_msgs__rosidl_typesupport_introspection_c__pyext
+[0.411s] Invoked command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy /usr/local/bin/cmake --build /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs -- -j4 -l4
+[0.618s] Invoking command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy /usr/local/bin/cmake --install /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs
+[0.633s] -- Install configuration: ""
+[0.634s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/ament_index/resource_index/rosidl_interfaces/jetmax_msgs
+[0.634s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs
+[0.635s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg
+[0.636s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail
+[0.636s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__functions.c
+[0.636s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__functions.h
+[0.637s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__functions.c
+[0.637s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__type_support.h
+[0.638s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__struct.h
+[0.638s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__struct.h
+[0.638s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__functions.h
+[0.639s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__type_support.h
+[0.639s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/position.h
+[0.640s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.640s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/set_motion.h
+[0.641s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/library_path.sh
+[0.641s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/library_path.dsv
+[0.641s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_generator_c.so
+[0.642s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs
+[0.643s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg
+[0.643s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail
+[0.643s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__rosidl_typesupport_fastrtps_c.h
+[0.644s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__rosidl_typesupport_fastrtps_c.h
+[0.644s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.645s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_fastrtps_c.so
+[0.645s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs
+[0.646s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg
+[0.646s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail
+[0.647s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
+[0.648s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__rosidl_typesupport_fastrtps_cpp.hpp
+[0.648s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/dds_fastrtps
+[0.648s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.649s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.649s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs
+[0.649s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg
+[0.650s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail
+[0.650s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__rosidl_typesupport_introspection_c.h
+[0.651s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__type_support.c
+[0.651s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__type_support.c
+[0.652s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__rosidl_typesupport_introspection_c.h
+[0.652s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.652s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_introspection_c.so
+[0.653s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_c.so
+[0.653s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs
+[0.653s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg
+[0.654s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail
+[0.654s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__builder.hpp
+[0.655s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__builder.hpp
+[0.655s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__traits.hpp
+[0.656s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__traits.hpp
+[0.656s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__struct.hpp
+[0.656s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__struct.hpp
+[0.657s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/position.hpp
+[0.657s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/set_motion.hpp
+[0.657s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs
+[0.658s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg
+[0.658s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail
+[0.659s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__type_support.cpp
+[0.659s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp
+[0.659s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__type_support.cpp
+[0.660s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__rosidl_typesupport_introspection_cpp.hpp
+[0.660s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_introspection_cpp.so
+[0.661s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_cpp.so
+[0.661s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/pythonpath.sh
+[0.661s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/pythonpath.dsv
+[0.662s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/__init__.py
+[0.784s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg
+[0.785s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg/_position.py
+[0.785s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg/_position_s.c
+[0.786s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg/_set_motion.py
+[0.786s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg/__init__.py
+[0.787s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg/_set_motion_s.c
+[0.787s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[0.787s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[0.788s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[0.789s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__python.so
+[0.790s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/msg/SetMotion.idl
+[0.791s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/msg/Position.idl
+[0.792s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/msg/SetMotion.msg
+[0.792s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/msg/Position.msg
+[0.793s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/ament_index/resource_index/package_run_dependencies/jetmax_msgs
+[0.793s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/ament_index/resource_index/parent_prefix_path/jetmax_msgs
+[0.794s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/ament_prefix_path.sh
+[0.794s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/ament_prefix_path.dsv
+[0.794s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/path.sh
+[0.795s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/path.dsv
+[0.795s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/local_setup.bash
+[0.796s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/local_setup.sh
+[0.796s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/local_setup.zsh
+[0.797s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/local_setup.dsv
+[0.797s] -- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.dsv
+[0.798s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/ament_index/resource_index/packages/jetmax_msgs
+[0.799s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_generator_cExport.cmake
+[0.800s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.800s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.801s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.801s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_cExport.cmake
+[0.802s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.802s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_generator_cppExport.cmake
+[0.803s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.804s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.805s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_cppExport.cmake
+[0.808s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.808s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/rosidl_cmake-extras.cmake
+[0.812s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.813s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.813s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.814s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.814s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.815s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.816s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgsConfig.cmake
+[0.816s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgsConfig-version.cmake
+[0.817s] -- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.xml
+[0.818s] Invoked command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy /usr/local/bin/cmake --install /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs
