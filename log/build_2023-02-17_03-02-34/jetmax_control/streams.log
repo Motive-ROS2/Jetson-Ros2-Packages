@@ -1,0 +1,24 @@
+[2.682s] Invoking command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/jetmax_control': AMENT_PREFIX_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_control/prefix_override:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_control/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/jetmax_control build --build-base /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_control/build install --record /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_control/install.log --install-scripts $base/lib/jetmax_control --single-version-externally-managed
+[3.569s] running egg_info
+[3.574s] writing ../build/jetmax_control/jetmax_control.egg-info/PKG-INFO
+[3.574s] writing dependency_links to ../build/jetmax_control/jetmax_control.egg-info/dependency_links.txt
+[3.575s] writing entry points to ../build/jetmax_control/jetmax_control.egg-info/entry_points.txt
+[3.575s] writing requirements to ../build/jetmax_control/jetmax_control.egg-info/requires.txt
+[3.576s] writing top-level names to ../build/jetmax_control/jetmax_control.egg-info/top_level.txt
+[3.733s] reading manifest file '../build/jetmax_control/jetmax_control.egg-info/SOURCES.txt'
+[3.738s] writing manifest file '../build/jetmax_control/jetmax_control.egg-info/SOURCES.txt'
+[3.738s] running build
+[3.739s] running build_py
+[3.739s] copying jetmax_control/controller.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_control/build/lib/jetmax_control
+[3.740s] running install
+[3.742s] running install_lib
+[3.745s] copying /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_control/build/lib/jetmax_control/controller.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_control/lib/python3.8/site-packages/jetmax_control
+[3.748s] byte-compiling /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_control/lib/python3.8/site-packages/jetmax_control/controller.py to controller.cpython-38.pyc
+[3.756s] running install_data
+[3.758s] running install_egg_info
+[3.763s] removing '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_control/lib/python3.8/site-packages/jetmax_control-0.0.0-py3.8.egg-info' (and everything under it)
+[3.764s] Copying ../build/jetmax_control/jetmax_control.egg-info to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_control/lib/python3.8/site-packages/jetmax_control-0.0.0-py3.8.egg-info
+[3.768s] running install_scripts
+[3.834s] Installing controller script to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_control/lib/jetmax_control
+[3.835s] writing list of installed files to '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_control/install.log'
+[3.942s] Invoked command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/jetmax_control' returned '0': AMENT_PREFIX_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_control/prefix_override:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_control/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/jetmax_control build --build-base /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_control/build install --record /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_control/install.log --install-scripts $base/lib/jetmax_control --single-version-externally-managed
