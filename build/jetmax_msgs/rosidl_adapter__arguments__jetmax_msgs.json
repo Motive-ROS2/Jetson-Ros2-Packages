@@ -1,7 +1,0 @@
-{
-  "package_name": "jetmax_msgs",
-  "non_idl_tuples": [
-    "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/jetmax_msgs:msg/SetMotion.msg",
-    "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/jetmax_msgs:msg/Position.msg"
-  ]
-}
