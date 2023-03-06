@@ -1,3 +1,0 @@
-[console_scripts]
-controller = jetmax_control.controller:main
-
