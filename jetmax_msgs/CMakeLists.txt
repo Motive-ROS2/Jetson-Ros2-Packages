@@ -20,6 +20,7 @@ find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -39,7 +40,9 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SetMotion.msg"
   "msg/Position.msg"
+  "action/PathPlanning.action"
   # add any dependencies here
+  DEPENDENCIES geometry_msgs
 )
 
 ament_package()
