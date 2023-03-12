@@ -130,9 +130,9 @@ def main(args=None):
     controller.destroy_node()
     rclpy.shutdown()
 
-     jetmax.set_joint_relatively(2, 45, 2) # +30deg to joint 2 in 2 sec  
+    # jetmax.set_joint_relatively(2, 45, 2) # +30deg to joint 2 in 2 sec  
     # jetmax.set_joint_relatively(1, 45, 2)
-    time.sleep(2) # max time to complete. Should be >= duration in set_joint. Activates all preceding move commands that haven't ran yet.
+    # time.sleep(2) # max time to complete. Should be >= duration in set_joint. Activates all preceding move commands that haven't ran yet.
 
     # # -- not good control
     # # jetmax.set_servo(2, 1, 1)
