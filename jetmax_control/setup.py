@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'controller = jetmax_control.controller:main'
+            'jetmax_demo = jetmax_control.jetmax_demo:main'
         ],
     },
 )
