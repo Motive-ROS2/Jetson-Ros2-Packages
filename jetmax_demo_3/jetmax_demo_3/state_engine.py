@@ -21,7 +21,7 @@ class StateEngine(Node):
         super().__init__("StateEngine")
         # parameter for ip address of host running optitrack_plugin. Default: host running this demo
         # (CHANGE ADAPTER TO ETH for jetson nano)
-        default_ip = netifaces.ifaddresses("wifi0")[netifaces.AF_INET][0]["addr"]
+        default_ip = netifaces.ifaddresses("eth0")[netifaces.AF_INET][0]["addr"]
         self.declare_parameter("plugin_ip_address", default_ip)
         self.declare_parameter("rigid_object_id", 0)
         self.declare_parameter("robot_name", "hiwonder") # marker set

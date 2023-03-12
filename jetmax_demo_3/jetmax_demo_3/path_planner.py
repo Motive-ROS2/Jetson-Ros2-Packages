@@ -1,5 +1,5 @@
 import rclpy
-# import hiwonder
+import hiwonder
 import time
 from rclpy.node import Node
 from rclpy.action import ActionServer
@@ -19,6 +19,8 @@ from jetmax_msgs.action import PathPlanning
 class PathPlanner(Node):
     def __init__(self):
         super().__init__("PathPlanner")
+        self.jetmax = hiwonder.JetMax()
+        self.sucker = hiwonder.Sucker()
         self.robot_bounds = [30,10] # (in cm) reach from base [horizontal,vertical]. Based on aligning arm vector to point towards object
         self.marker_ee_offset = (-2,3.5,-9) # (in cm) [x,y,z] x = along arm, y = front of arm
 
@@ -27,15 +29,19 @@ class PathPlanner(Node):
     def as_callback(self, goal):
         self.get_logger().info("Executing Path Planning Goal")
         feedback_msg = PathPlanning.Feedback()
+        # self.jetmax.go_home(2)
         # move robot base
+        self.jetmax.set_joint_relatively(1, 45, 3)
+        time.sleep(3)
         feedback_msg.update_status = 0
         goal.publish_feedback(feedback_msg)
         # move robot arm
+        # self.jetmax.set_joint_relatively(2, 20, 1)
+        # time.sleep(1)
         goal.succeed()
-        result = PathPlanning.result()
+        result = PathPlanning.Result()
         result.return_code = 0
         return result
-        return
 
 def main(args=None):
     rclpy.init(args=args)
