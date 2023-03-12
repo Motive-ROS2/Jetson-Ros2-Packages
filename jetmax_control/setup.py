@@ -20,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'controller = jetmax_control.controller:main'
-            'jetmax_demo = jetmax_control.jetmax_demo:main'
+            'controller = jetmax_control.controller:main',
+            'demo2 = jetmax_control.demo2:main'
         ],
     },
 )
