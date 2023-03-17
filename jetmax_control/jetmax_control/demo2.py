@@ -15,6 +15,13 @@ class JetMaxDemo(Node):
     def __init__(self):
         super().__init__("JetMaxDemo")
 
+        self.jetmax = hiwonder.JetMax()
+        self.sucker = hiwonder.Sucker()
+        self.jetmax.go_home(2)
+
+        # Create service go to original position
+        self.service_origin = self.create_service(Trigger, "jetmax/move/origin")
+    
         # Create publisher for controlling gripper
         self.gripper_pub = self.create_publisher(SetMotion, "jetmax/gripper/move/actuate", 10)
 
@@ -28,7 +35,7 @@ class JetMaxDemo(Node):
         self.suction_sub = self.create_subscription(Bool, "jetmax/suction/activate", self.suction_callback, 10)
 
         # Wait for JetMax controller to be ready
-        while not self.wait_for_service("jetmax/move/origin"):
+        while not self.jetmax.wait_for_service(timeout_sec=1):
             self.get_logger().info("Waiting for JetMax controller...")
             time.sleep(1)
 
@@ -58,10 +65,11 @@ class JetMaxDemo(Node):
         # Move JetMax to home position
         self.call_go_home()
 
+
     def call_go_home(self):
         # Call JetMax service to move to home position
         client = self.create_client(Trigger, "jetmax/move/origin")
-        while not client.wait_for_service(timeout_sec=1.0):
+        while not self.jetmax.wait_for_service(timeout_sec=1.0):
             self.get_logger().warn("Waiting for JetMax go_home service...")
         req = Trigger.Request()
         future = client.call_async(req)
