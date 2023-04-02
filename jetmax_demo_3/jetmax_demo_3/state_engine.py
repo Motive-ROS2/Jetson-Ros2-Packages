@@ -21,16 +21,16 @@ class StateEngine(Node):
         super().__init__("StateEngine")
         # parameter for ip address of host running optitrack_plugin. Default: host running this demo
         # (CHANGE ADAPTER TO ETH for jetson nano)
-        default_ip = netifaces.ifaddresses("eth0")[netifaces.AF_INET][0]["addr"]
-        self.declare_parameter("plugin_ip_address", "10.1.10.253")
+        # default_ip = netifaces.ifaddresses("eth0")[netifaces.AF_INET][0]["addr"]
+        self.declare_parameter("motive_ip_address", "10.1.10.253")
         self.declare_parameter("rigid_object_id", 0)
         self.declare_parameter("robot_name", "hiwonder") # marker set
         self.find_robot = True
         # list of robot arm marker positions gathered from Motive. Used to transform motive pos into movement path.
         # Structure: [base-marker, mid-marker, ee-marker]
         self.robot_marker_pos = []
-        # self.object_pos # assuming only need pos for now
-        self.vector_bound_mag = math.sqrt((30**2) + (10**2)) # (in cm) reach from base [horizontal,vertical]. Based on aligning arm vector to point towards object
+        # (in cm) reach from base [horizontal,vertical]. Based on aligning arm vector to point towards object
+        self.bounds =  {"horizontal": 30, "vertical": 10}
         self.marker_ee_offset = (-2,3.5,-9) # (in cm) [x,y,z] x = along arm, y = front of arm
         
         # either have sub in another node (multi-processing), or run in a multithreaded executor, or be adament about starting/stopping plugin publishing
@@ -133,9 +133,9 @@ class StateEngine(Node):
     # returns True if object is within reach of robot
     def object_within_range(self):
         base_marker = self.robot_marker_pos[0]
-        vector_magnitude = math.sqrt((abs(base_marker.x - self.object_pos.x)**2) + 
-            (abs(base_marker.y - self.object_pos.y)**2) + (abs(base_marker.z - self.object_pos.z)**2))
-        if vector_magnitude <= self.vector_bound_mag:
+        # x,y magnitude of object to base of robot
+        vector_magnitude = math.sqrt((abs(base_marker.x - self.object_pos.x)**2) + (abs(base_marker.y - self.object_pos.y)**2))
+        if vector_magnitude <= self.bounds["horizontal"] and self.object_pos.z <= self.bounds["vertical"]:
             return True
         else:
             return False
@@ -155,7 +155,7 @@ class StateEngine(Node):
     def connect_motive(self):
         request = OptiTrackService.Request()
         request.message_type = 0
-        request.ip = self.get_parameter('plugin_ip_address').get_parameter_value().string_value
+        request.ip = self.get_parameter('motive_ip_address').get_parameter_value().string_value
         request.connection_type = "m" # multimodal, change to 'u' for unicast
         self.connect_response = self.plugin_client.call_async(request)
         rclpy.spin_until_future_complete(self, self.connect_response) # spinning node until service complete (using singlethreaded executor)

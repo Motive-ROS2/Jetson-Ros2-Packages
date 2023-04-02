@@ -29,15 +29,15 @@ class PathPlanner(Node):
     def as_callback(self, goal):
         self.get_logger().info("Executing Path Planning Goal")
         feedback_msg = PathPlanning.Feedback()
-        # self.jetmax.go_home(2)
+        self.jetmax.go_home(2)
         # move robot base
         self.jetmax.set_joint_relatively(1, 45, 3)
         time.sleep(3)
         feedback_msg.update_status = 0
         goal.publish_feedback(feedback_msg)
         # move robot arm
-        # self.jetmax.set_joint_relatively(2, 20, 1)
-        # time.sleep(1)
+        self.jetmax.set_joint_relatively(2, 20, 1)
+        time.sleep(1)
         goal.succeed()
         result = PathPlanning.Result()
         result.return_code = 0
