@@ -1,0 +1,6 @@
+float32 angle
+float32 speed
+int64 joint_id
+bool sucker
+---
+bool success
