@@ -6,33 +6,32 @@ from launch.actions import DeclareLaunchArgument
 # keeping default namespaces
 
 def generate_launch_description():
-    motive_ip_address = LaunchConfiguration('motive_ip_address')
-    rigid_object_id = LaunchConfiguration('rigid_object_id')
-    robot_name = LaunchConfiguration('robot_name')
-
-    motive_ip_address_arg = DeclareLaunchArgument(
-    'motive_ip_address',
-    default_value='10.1.10.253'
+    ip_launch_arg = DeclareLaunchArgument(
+        name='ip',
+        default_value=''
     )
     rigid_object_id_arg = DeclareLaunchArgument(
-        'rigid_object_id',
+        name='rigid_object_id',
         default_value='0'
     )
-    robot_name_arg = DeclareLaunchArgument(
-        'robot_name',
-        default_value='hiwonder'
+    robot_base_arg = DeclareLaunchArgument(
+        name='robot_base',
+        default_value='1'
     )
+    ip = LaunchConfiguration('ip')
+    rigid_object_id = LaunchConfiguration('rigid_object_id')
+    robot_base = LaunchConfiguration('robot_base')
 
     return LaunchDescription([
         Node(
             package='jetmax_demo_3',
             executable='state_engine',
-            name='StateEngine' #,
-            #parameters=[
-            #    {"motive_ip_address": motive_ip_address},
-            #    {"rigid_object_id": rigid_object_id},
-            #    {"robot_name": robot_name}
-            #]
+            name='StateEngine',
+            parameters=[
+               {"motive_ip_address": ip},
+               {"rigid_object_id": rigid_object_id},
+               {"robot_base": robot_base}
+            ]
         ),
         Node(
             package='jetmax_demo_3',

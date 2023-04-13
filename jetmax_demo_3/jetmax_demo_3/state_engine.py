@@ -22,9 +22,9 @@ class StateEngine(Node):
         # parameter for ip address of host running optitrack_plugin. Default: host running this demo
         # (CHANGE ADAPTER TO ETH for jetson nano)
         # default_ip = netifaces.ifaddresses("eth0")[netifaces.AF_INET][0]["addr"]
-        self.declare_parameter("motive_ip_address", "10.1.10.239")
+        self.declare_parameter("motive_ip_address", "")
         self.declare_parameter("rigid_object_id", 1)
-        self.declare_parameter("robot_name", 2) # marker set
+        self.declare_parameter("robot_base", 2) # rigid body
         self.find_robot = True
         # list of robot arm marker positions gathered from Motive. Used to transform motive pos into movement path.
         # Structure: [base-marker, mid-marker, ee-marker]
@@ -112,20 +112,18 @@ class StateEngine(Node):
     # might need to be in another process
     def sub_callback(self, msg):
         if self.find_robot == True:
-            #self.get_logger().info("Subscriber callback ran: {}".format(msg.rigid_bodies))
-            robot_name = 2 #self.get_parameter('robot_name').get_parameter_value().double_value # string_value
-            #self.get_logger().info("Robot id being used: {}".format(robot_name))
+            robot_base = self.get_parameter('robot_base').get_parameter_value().integer_value
+            self.get_logger().info("Robot id being used: {}".format(robot_base))
             for rigid_body in msg.rigid_bodies:
-                if rigid_body.id == robot_name:
+                if rigid_body.id == robot_base:
                     # only first 3 markers used for robot arm
                     # for marker in markers:
-                    self.get_logger().info("found rigid body with id 2")
                     self.robot_marker_pos.append(rigid_body.pos) #(marker.pos.x, marker.pos.y, marker.pos.z))
                     self.find_robot = False
                     return
         else:
             # find rigid body position to move to
-            object_id = 1 #self.get_parameter('rigid_object_id').get_parameter_value().double_value
+            object_id = self.get_parameter('rigid_object_id').get_parameter_value().integer_value
             for rigid_body in msg.rigid_bodies:
                 if rigid_body.id == object_id:
                     self.object_pos = rigid_body.pos #(rigid_body.pos.x, rigid_body.pos.y, rigid_body.pos.z)
