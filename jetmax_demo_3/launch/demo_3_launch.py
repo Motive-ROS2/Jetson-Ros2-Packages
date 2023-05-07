@@ -38,16 +38,23 @@ def generate_launch_description():
             executable='state_engine',
             name='StateEngine',
             parameters=[
-               {"motive_ip_address": ip},
-               {"rigid_object_id": rigid_object_id},
-               {"robot_base": robot_base},
-               {"robot_arm": robot_arm},
-               {"robot_ee": robot_ee}
+               {"motive_ip_address": ip}
             ]
         ),
         Node(
             package='jetmax_demo_3',
             executable='path_planner',
             name='PathPlanner'
+        ),
+        Node(
+            package='jetmax_demo_3',
+            executable='position_service',
+            name='PositionService',
+            parameters=[
+               {"rigid_object_id": rigid_object_id},
+               {"robot_base": robot_base},
+               {"robot_arm": robot_arm},
+               {"robot_ee": robot_ee}
+            ]
         )
     ])

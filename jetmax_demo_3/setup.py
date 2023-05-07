@@ -24,7 +24,8 @@ setup(
     entry_points={
         'console_scripts': [
             'state_engine = jetmax_demo_3.state_engine:main',
-            'path_planner = jetmax_demo_3.path_planner:main'
+            'path_planner = jetmax_demo_3.path_planner:main',
+            'position_service = jetmax_demo_3.position_service:main'
         ],
     },
 )
