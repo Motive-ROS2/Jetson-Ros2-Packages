@@ -18,9 +18,19 @@ def generate_launch_description():
         name='robot_base',
         default_value='1'
     )
+    robot_arm_arg = DeclareLaunchArgument(
+        name='robot_arm,',
+        default_value='1'
+    )
+    robot_ee_arg = DeclareLaunchArgument(
+        name='robot_ee,',
+        default_value='1'
+    )
     ip = LaunchConfiguration('ip')
     rigid_object_id = LaunchConfiguration('rigid_object_id')
     robot_base = LaunchConfiguration('robot_base')
+    robot_arm = LaunchConfiguration('robot_arm')
+    robot_ee = LaunchConfiguration('robot_ee')
 
     return LaunchDescription([
         Node(
@@ -30,7 +40,9 @@ def generate_launch_description():
             parameters=[
                {"motive_ip_address": ip},
                {"rigid_object_id": rigid_object_id},
-               {"robot_base": robot_base}
+               {"robot_base": robot_base},
+               {"robot_arm": robot_arm},
+               {"robot_ee": robot_ee}
             ]
         ),
         Node(

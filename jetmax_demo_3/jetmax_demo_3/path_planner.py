@@ -26,7 +26,7 @@ class PathPlanner(Node):
         self.sucker = hiwonder.Sucker()
         self.robot_bounds = [30,10] # (in cm) reach from base [horizontal,vertical]. Based on aligning arm vector to point towards object
         self.marker_ee_offset = (-2,3.5,-9) # (in cm) [x,y,z] x = along arm, y = front of arm
-        self.meter_per_degree = 0.0005 # PLACEHOLDER TODO: Find actual value
+        self.meter_per_degree = 0.0196 # PLACEHOLDER TODO: Find actual value
 
         self.path_execution_as = ActionServer(self, PathPlanning, "pathPlanning", self.as_callback)
 
@@ -36,7 +36,8 @@ class PathPlanner(Node):
         # set robot to home: (should not be necessary)
         self.jetmax.go_home(2)
         # move robot base to align with object:
-        self.align_arm(goal.request.robot_markers, goal.request.object_pos)
+        base_angle = self.align_arm(goal.request.robot_markers, goal.request.object_pos)
+        self.get_logger().info(f"Turning robot at angle: {base_angle}")
         # ADD CHECK OBJ POS HERE
         feedback_msg.update_status = 0
         goal.publish_feedback(feedback_msg)
@@ -64,8 +65,11 @@ class PathPlanner(Node):
         obj_mag = math.sqrt((obj_vect[0]**2) + (obj_vect[1]**2))
         dot_product = (arm_vect[0] * obj_vect[0]) + (arm_vect[1] * obj_vect[1])
         cos_angle = dot_product / (arm_mag * obj_mag)
-        assert math.abs(cos_angle) > 1, "cosine of angle between arm and object > 1"
-        angle = math.acos(cos_angle)
+        assert abs(cos_angle) < 1.0, f"cosine of angle: {cos_angle} between arm and object > 1"
+        angle = math.acos(cos_angle) * (180.0/math.pi)
+        direction = obj_mag * arm_mag * math.sin(angle)
+        if direction > 0:
+            angle = angle * -1
         # move base with a set speed (can make relative to how big angle is):
         self.jetmax.set_joint_relatively(1, angle, 3) # angle need to be int?
         time.sleep(3)
@@ -78,8 +82,8 @@ class PathPlanner(Node):
         dist_vect = (ee_marker.x - obj.x, ee_marker.y - obj.y) # used to know if need to go backward or forward
         dist_mag = math.sqrt((dist_vect[0]**2) + (dist_vect[0]**2)) # in meters
         angle = dist_mag / self.meter_per_degree
-        if dist_vect < 0:
-            angle = -angle
+        # if dist_vect < 0:
+        #     angle = -angle
         self.jetmax.set_joint_relatively(2, angle, 3)
         time.sleep(3)
         return angle

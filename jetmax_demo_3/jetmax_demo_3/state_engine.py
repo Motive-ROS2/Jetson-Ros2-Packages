@@ -25,10 +25,12 @@ class StateEngine(Node):
         self.declare_parameter("motive_ip_address", "")
         self.declare_parameter("rigid_object_id", 1)
         self.declare_parameter("robot_base", 2) # rigid body
+        self.declare_parameter("robot_arm", 2) # rigid body
+        self.declare_parameter("robot_ee", 2) # rigid body
         self.find_robot = True
         # list of robot arm marker positions gathered from Motive. Used to transform motive pos into movement path.
         # Structure: [base-marker, mid-marker, ee-marker]
-        self.robot_marker_pos = []
+        self.robot_marker_pos = {}
         # (in cm) reach from base [horizontal,vertical]. Based on aligning arm vector to point towards object
         self.bounds =  {"horizontal": 0.30, "vertical": 0.10}
         self.marker_ee_offset = (-2,3.5,-9) # (in cm) [x,y,z] x = along arm, y = front of arm
@@ -87,7 +89,7 @@ class StateEngine(Node):
     def send_path_goal(self):
         goal_msg = PathPlanning.Goal()
         goal_msg.object_pos = self.object_pos
-        goal_msg.robot_markers = self.robot_marker_pos
+        goal_msg.robot_markers = [self.robot_marker_pos["base"], self.robot_marker_pos["arm"], self.robot_marker_pos["ee"]]
         # wait for action server to be available:
         self.path_planner_ac.wait_for_server()
         self.path_planner_result = self.path_planner_ac.send_goal_async(goal_msg, feedback_callback=self.path_feedback) # using future obj of python
@@ -111,16 +113,35 @@ class StateEngine(Node):
 
     # might need to be in another process
     def sub_callback(self, msg):
+        num_found = 0
         if self.find_robot == True:
             robot_base = self.get_parameter('robot_base').get_parameter_value().integer_value
+            robot_arm = self.get_parameter('robot_arm').get_parameter_value().integer_value
+            robot_ee = self.get_parameter('robot_ee').get_parameter_value().integer_value
             self.get_logger().info("Robot id being used: {}".format(robot_base))
             for rigid_body in msg.rigid_bodies:
                 if rigid_body.id == robot_base:
-                    # only first 3 markers used for robot arm
-                    # for marker in markers:
-                    self.robot_marker_pos.append(rigid_body.pos) #(marker.pos.x, marker.pos.y, marker.pos.z))
-                    self.find_robot = False
-                    return
+                    self.robot_marker_pos["base"] = rigid_body.pos
+                    #  or rigid_body.id == robot_arm or rigid_body.id == robot_ee:
+                    # # only first 3 markers used for robot arm
+                    # # for marker in markers:
+                    # self.robot_marker_pos.append(rigid_body.pos) #(marker.pos.x, marker.pos.y, marker.pos.z))
+                    num_found += 1
+                    if num_found >= 3:
+                        self.find_robot = False
+                        return
+                elif rigid_body.id == robot_arm:
+                    self.robot_marker_pos["arm"] = rigid_body.pos
+                    num_found += 1
+                    if num_found >= 3:
+                        self.find_robot = False
+                        return
+                elif rigid_body.id == robot_ee:
+                    self.robot_marker_pos["ee"] = rigid_body.pos
+                    num_found += 1
+                    if num_found >= 3:
+                        self.find_robot = False
+                        return
         else:
             # find rigid body position to move to
             object_id = self.get_parameter('rigid_object_id').get_parameter_value().integer_value
@@ -133,11 +154,11 @@ class StateEngine(Node):
 
     # returns True if object is within reach of robot
     def object_within_range(self):
-        base_marker = self.robot_marker_pos[0]
+        base_marker = self.robot_marker_pos["base"]
         # x,y magnitude of object to base of robot
         vector_magnitude = math.sqrt(((base_marker.x - self.object_pos.x)**2) + ((base_marker.y - self.object_pos.y)**2))
         height_diff = abs(base_marker.z - self.object_pos.z)
-        self.get_logger().info("height: {} vector: {}".format(height_diff, vector_magnitude))
+        # self.get_logger().info("height: {} vector: {}".format(height_diff, vector_magnitude))
         if vector_magnitude <= self.bounds["horizontal"] and height_diff <= self.bounds["vertical"]:
             return True
         else:
@@ -159,7 +180,7 @@ class StateEngine(Node):
         request = OptiTrackService.Request()
         request.message_type = 0
         request.ip = self.get_parameter('motive_ip_address').get_parameter_value().string_value
-        request.connection_type = "m" # multimodal, change to 'u' for unicast
+        request.connection_type = "u" # multimodal, change to 'u' for unicast
         self.connect_response = self.plugin_client.call_async(request)
         rclpy.spin_until_future_complete(self, self.connect_response) # spinning node until service complete (using singlethreaded executor)
         # if failed to connect, shutdown for now
