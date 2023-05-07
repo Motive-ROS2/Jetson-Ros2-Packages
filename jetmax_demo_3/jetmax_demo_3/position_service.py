@@ -9,9 +9,7 @@ class PositionService(Node):
     def __init__(self):
         super().__init__("PositionService")
         self.declare_parameter("rigid_object_id", 1)
-        self.declare_parameter("robot_base", 2) # rigid body
-        self.declare_parameter("robot_arm", 2) # rigid body
-        self.declare_parameter("robot_ee", 2) # rigid body
+        self.declare_parameter("robot_name", 'hiwonder') # rigid body
         self.find_robot = True
         # list of robot arm marker positions gathered from Motive. Used to transform motive pos into movement path.
         # Structure: [base-marker, mid-marker, ee-marker]
@@ -59,24 +57,13 @@ class PositionService(Node):
     def sub_callback(self, msg):
         num_found = 0
         if self.find_robot == True:
-            robot_base = self.get_parameter('robot_base').get_parameter_value().integer_value
-            robot_arm = self.get_parameter('robot_arm').get_parameter_value().integer_value
-            robot_ee = self.get_parameter('robot_ee').get_parameter_value().integer_value
-            for rigid_body in msg.rigid_bodies:
-                if rigid_body.id == robot_base:
-                    self.robot_marker_pos["base"] = rigid_body.pos
-                    # # only first 3 markers used for robot arm
-                    # # for marker in markers:
-                    # self.robot_marker_pos.append(rigid_body.pos) #(marker.pos.x, marker.pos.y, marker.pos.z))
-                    num_found += 1
-                elif rigid_body.id == robot_arm:
-                    self.robot_marker_pos["arm"] = rigid_body.pos
-                    num_found += 1
-                elif rigid_body.id == robot_ee:
-                    self.robot_marker_pos["ee"] = rigid_body.pos
-                    num_found += 1
-                if num_found >= 3:
-                    self.find_robot = False
+            robot_name = self.get_parameter('robot_name').get_parameter_value().string_value
+            for ms in msg.marker_sets:
+                if ms.sz_name == robot_name:
+                    # using only first 3 markers in marker set (base, arm , ee)
+                    self.robot_marker_pos["base"] = ms.markers[0]
+                    self.robot_marker_pos["arm"] = ms.markers[1]
+                    self.robot_marker_pos["ee"] = ms.markers[2]
                     return
         else:
             # find rigid body position to move to

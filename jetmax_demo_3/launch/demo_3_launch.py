@@ -15,16 +15,8 @@ def generate_launch_description():
         default_value='0'
     )
     robot_base_arg = DeclareLaunchArgument(
-        name='robot_base',
-        default_value='1'
-    )
-    robot_arm_arg = DeclareLaunchArgument(
-        name='robot_arm,',
-        default_value='1'
-    )
-    robot_ee_arg = DeclareLaunchArgument(
-        name='robot_ee,',
-        default_value='1'
+        name='robot_name',
+        default_value='hiwonder'
     )
     ip = LaunchConfiguration('ip')
     rigid_object_id = LaunchConfiguration('rigid_object_id')
@@ -51,10 +43,7 @@ def generate_launch_description():
             executable='position_service',
             name='PositionService',
             parameters=[
-               {"rigid_object_id": rigid_object_id},
-               {"robot_base": robot_base},
-               {"robot_arm": robot_arm},
-               {"robot_ee": robot_ee}
+               {"robot_name": rigid_object_id}
             ]
         )
     ])
