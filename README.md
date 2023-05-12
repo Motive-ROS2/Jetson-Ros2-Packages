@@ -1,4 +1,4 @@
 # jetmax_r2_packages
-Packages for controlling the Jetmax with ROS2 and demos.
+ROS2 packages for controlling and running Motive demonstrations.
 
-Can Include Python and C++ packages
+**Requirements:**
