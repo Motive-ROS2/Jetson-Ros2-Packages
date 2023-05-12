@@ -8,4 +8,8 @@ ROS2 packages for controlling and running Motive demonstrations.
 
 **How To Run**
 - The jetmax_control package contains topics and services to control the robot and its various grippers
-- How to run: `ros2 run jetmax_control controller`
+- How to run the package: `ros2 run jetmax_control controller`
+- A few notes:
+  - DC motor 2 (servo 3) = vertical arm control (joint 3)
+  - DC motor 1 (servo 2) = arm base control (joint 2)
+  - serial_servo = base rotational motor (joint 1)
