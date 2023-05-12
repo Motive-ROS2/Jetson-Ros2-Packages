@@ -13,3 +13,5 @@ ROS2 packages for controlling and running Motive demonstrations.
   - DC motor 2 (servo 3) = vertical arm control (joint 3)
   - DC motor 1 (servo 2) = arm base control (joint 2)
   - serial_servo = base rotational motor (joint 1)
+- The jetmax_demo_3 is a demo using the ROS2 Motive plugin (https://github.com/Motive-ROS2/Motive-Plugin). The purpose of the demo is to actively track the position of the robot and a rigid body. See video here: (TODO: add)
+- To launch the demo: `ros2 launch hetmax_demo_3 ip:=<ip address of motive streaming> robot_name:=<name of marker set in motive of the robot> rigid_body_id:=<id # of object to be tracked>` 
