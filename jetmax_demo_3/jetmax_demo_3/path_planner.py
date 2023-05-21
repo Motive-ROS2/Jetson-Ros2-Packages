@@ -22,7 +22,7 @@ class PathPlanner(Node):
         self.robot_bounds = [30,10] # (in cm) reach from base [horizontal,vertical]. Based on aligning arm vector to point towards object
         self.marker_ee_offset = (-2,3.5,-9) # (in cm) [x,y,z] x = along arm, y = front of arm
         self.meter_per_degree = 0.0196 # actual value. Used for both joint 2 and 3
-        self.obj_height_offset = 0.04 # in meters, from center of object.
+        self.obj_height_offset = 0.01 # in meters, from center of object. cube = 4cm
         self.moved_tolerance = 0.005 # in meters
 
         self.path_execution_server = ActionServer(self, PathPlanning, "Demo/pathPlanning", self.as_callback)
@@ -127,13 +127,14 @@ class PathPlanner(Node):
         return False
 
     def get_positions(self):
-        self.pos_response = self.position_client.call_async(None) # no request
+        self.req.rem = 0
+        self.pos_response = self.position_client.call_async(self.req) # no request
         rclpy.spin_until_future_complete(self, self.pos_response) # spinning node until service complete (using singlethreaded executor)
         positions = self.pos_response.result()
         return (positions.object_pos, positions.robot_markers)
 
     def get_positions_async(self):
-        self.pos_response = self.position_client.call_async(None) # no request
+        self.pos_response = self.position_client.call_async(GetPosition.Request()) # no request
         self.positions = self.pos_response.result() # non-blocking, will set self.positions once self.positions.done()
 
 def main(args=None):

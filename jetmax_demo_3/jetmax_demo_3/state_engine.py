@@ -37,7 +37,9 @@ class StateEngine(Node):
             return
         
         # get object and robot positions:
+        self.get_logger().info("Running service")
         object_pos, robot_markers = self.get_positions() # obsolete
+        self.get_logger().info("Finished service")
 
         # move to object:
         #TODO: add feedback callback, and service for action server to use
@@ -47,7 +49,7 @@ class StateEngine(Node):
         #TODO: add states after action goal set in case it fails (object goes out of range/etc)
 
     def get_positions(self):
-        self.pos_response = self.position_client.call_async(None) # no request
+        self.pos_response = self.position_client.call_async(GetPosition.Request()) # no request
         rclpy.spin_until_future_complete(self, self.pos_response) # spinning node until service complete (using singlethreaded executor)
         positions = self.pos_response.result()
         return (positions.object_pos, positions.robot_markers)

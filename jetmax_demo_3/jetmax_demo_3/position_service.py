@@ -8,6 +8,7 @@ from jetmax_msgs.srv import GetPosition
 class PositionService(Node):
     def __init__(self):
         super().__init__("PositionService")
+        self.get_logger().info("hello from service")
         self.declare_parameter("rigid_object_id", 1)
         self.declare_parameter("robot_base", 2) # rigid body
         self.declare_parameter("robot_arm", 2) # rigid body
@@ -27,8 +28,8 @@ class PositionService(Node):
 
     def srv_callback(self, request, response):
         # find robot position:
-        self.enable_motive_publishing(True)
         self.find_robot = True
+        self.enable_motive_publishing(True)
         self.get_logger().info("Searching for robot position in Motive...")
         while rclpy.ok():
             rclpy.spin_once(self, timeout_sec=1.0) # let backend run one callback (using singlethreaded executor)
@@ -44,11 +45,12 @@ class PositionService(Node):
         # find object position:
         self.found_object = False
         self.get_logger().info("Searching for object position in Motive...")
+        self.enable_motive_publishing(True)
         while rclpy.ok():
             rclpy.spin_once(self, timeout_sec=1.0) # let backend run one callback (using singlethreaded executor)
             if self.found_object:
                 break
-        self.get_logger().info("Found object within range at: {}".format(self.object_pos))
+        self.get_logger().debug("Found object within range at: {}".format(self.object_pos))
         self.enable_motive_publishing(False)
 
         # set service response:
@@ -57,11 +59,13 @@ class PositionService(Node):
         return response
 
     def sub_callback(self, msg):
+        self.get_logger().info("callback ran")
         num_found = 0
         if self.find_robot == True:
             robot_base = self.get_parameter('robot_base').get_parameter_value().integer_value
             robot_arm = self.get_parameter('robot_arm').get_parameter_value().integer_value
             robot_ee = self.get_parameter('robot_ee').get_parameter_value().integer_value
+            self.get_logger().info(f"{robot_base} {robot_arm} {robot_ee}")
             for rigid_body in msg.rigid_bodies:
                 if rigid_body.id == robot_base:
                     self.robot_marker_pos["base"] = rigid_body.pos
@@ -77,6 +81,8 @@ class PositionService(Node):
                     num_found += 1
                 if num_found >= 3:
                     self.find_robot = False
+                    self.enable_motive_publishing(False)
+                    self.get_logger().info(f"Found robot at: {self.robot_marker_pos}")        
                     return
         else:
             # find rigid body position to move to
@@ -86,6 +92,7 @@ class PositionService(Node):
                     self.object_pos = rigid_body.pos #(rigid_body.pos.x, rigid_body.pos.y, rigid_body.pos.z)
                     if self.object_within_range():
                         self.found_object = True
+                        self.enable_motive_publishing(False)
                     return
 
     # returns True if object is within reach of robot
@@ -106,9 +113,18 @@ class PositionService(Node):
         else:
             request.message_type = 3
         self.connect_response = self.plugin_client.call_async(request)
-        rclpy.spin_until_future_complete(self, self.connect_response) # spinning node until service complete (using singlethreaded executor)
-        return self.connect_response.result().return_code
+        self.get_logger().info("Hello?!?!")
+        #rclpy.spin_until_future_complete(self, self.connect_response) # spinning node until service complete (using singlethreaded executor)
+        #self.spin_until_complete(self.connect_response)
+        self.get_logger().info("Returned from enable")
+        return #self.connect_response.result().return_code
 
+    def spin_until_complete(self, future_obj):
+        while rclpy.ok():
+            rclpy.spin_once(self, timeout_sec=0.1)
+            if future_obj.done():
+                break
+        return
 
 def main(args=None):
     rclpy.init(args=args)
