@@ -20,8 +20,8 @@ The package can be launched with: `ros2 run jetmax_control controller`
 The package provides a list of topics which can be published to from the command line to move the robot (can run `ros2 topic list` to see all available topics).
 
 To run a simple demonstration of the robot moving, you can run these shell scripts after launching the jetmax_control package:
-* [demo1.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/new_structure/jetmax_control/jetmax_control/demo1.sh)
-* [demo2.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/new_structure/jetmax_control/jetmax_control/demo2.sh)
+* [demo1.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/jetmax_control/jetmax_control/demo1.sh)
+* [demo2.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/jetmax_control/jetmax_control/demo2.sh)
 
 ## Running jetmax_demo_3 (Motive Demo)
 This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Motive-Plugin) to track the position of an object and once it is within range of the robot, go and pick up the object. The jetmax_control package does **not** need to be running for this.
@@ -47,3 +47,5 @@ This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Moti
 8. The demo should have launched and should then be looking for the object. To have the robot try to grap the object, move the object to about within 30cm of the robot and leave it there.
 
 Below is a conceptual diagram of how the system should be set up to successfuly run jetmax_demo_3 and use the Motive plug-in in general:
+
+![Conceptual overview of demo setup]([https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/media/System%20Conceptual%20Overview.drawio.png) "Test")
