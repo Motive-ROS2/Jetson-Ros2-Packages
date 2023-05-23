@@ -1,0 +1,795 @@
+[0.000000] (-) TimerEvent: {}
+[0.000681] (-) JobUnselected: {'identifier': 'demo1'}
+[0.001453] (-) JobUnselected: {'identifier': 'jetmax_control'}
+[0.001806] (-) JobUnselected: {'identifier': 'jetmax_demo_3'}
+[0.002721] (-) JobUnselected: {'identifier': 'jetmax_srvs'}
+[0.003524] (jetmax_msgs) JobQueued: {'identifier': 'jetmax_msgs', 'dependencies': OrderedDict()}
+[0.004985] (jetmax_msgs) JobStarted: {'identifier': 'jetmax_msgs'}
+[0.084096] (jetmax_msgs) JobProgress: {'identifier': 'jetmax_msgs', 'progress': 'cmake'}
+[0.085118] (jetmax_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/jetmax_msgs', '-DCMAKE_INSTALL_PREFIX=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs'], 'cwd': '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hiwonder'), ('SSH_CLIENT', '2601:1c0:8301:8270:2dfe:a79f:aac3:ab11 60844 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/local/cuda/lib64:/home/hiwonder/capstone_ws/install/optitrack_interfaces/lib:/home/hiwonder/capstone_ws/install/jetmax_srvs/lib:/home/hiwonder/capstone_ws/install/jetmax_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hiwonder'), ('OLDPWD', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435'), ('TERM_PROGRAM_VERSION', '1.78.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-980a5368-1a22-4f21-8459-ee878fc0aaa7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hiwonder/capstone_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hiwonder'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda/bin:/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/bin/remote-cli:/home/hiwonder/.local/bin:/usr/local/cuda/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ca14ecb137.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/hiwonder/capstone_ws/install/optitrack_plugin:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/optitrack_interfaces:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_srvs:/home/hiwonder/capstone_ws/install/jetmax_control:/home/hiwonder/capstone_ws/install/jetmax_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs'), ('SSH_CONNECTION', '2601:1c0:8301:8270:2dfe:a79f:aac3:ab11 60844 2601:1c0:8301:8270::94bf 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hiwonder/capstone_ws/install/jetmax_demo_3/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/optitrack_interfaces/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_srvs/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_control/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hiwonder/capstone_ws/install/optitrack_plugin:/home/hiwonder/capstone_ws/install/optitrack_interfaces:/home/hiwonder/capstone_ws/install/jetmax_srvs:/home/hiwonder/capstone_ws/install/jetmax_msgs:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy')]), 'shell': False}
+[0.099079] (-) TimerEvent: {}
+[0.199969] (-) TimerEvent: {}
+[0.300620] (-) TimerEvent: {}
+[0.401290] (-) TimerEvent: {}
+[0.501926] (-) TimerEvent: {}
+[0.602532] (-) TimerEvent: {}
+[0.673160] (jetmax_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.702697] (-) TimerEvent: {}
+[0.803371] (-) TimerEvent: {}
+[0.904007] (-) TimerEvent: {}
+[1.004617] (-) TimerEvent: {}
+[1.105329] (-) TimerEvent: {}
+[1.124149] (jetmax_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.161385] (jetmax_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.205490] (-) TimerEvent: {}
+[1.306178] (-) TimerEvent: {}
+[1.359186] (jetmax_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.393330] (jetmax_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.399030] (jetmax_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.401615] (jetmax_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.406296] (-) TimerEvent: {}
+[1.415625] (jetmax_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.506478] (-) TimerEvent: {}
+[1.607164] (-) TimerEvent: {}
+[1.630685] (jetmax_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.707325] (-) TimerEvent: {}
+[1.744249] (jetmax_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.745400] (jetmax_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.747219] (jetmax_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.807472] (-) TimerEvent: {}
+[1.817274] (jetmax_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.907621] (-) TimerEvent: {}
+[1.961771] (jetmax_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.962497] (jetmax_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.007851] (-) TimerEvent: {}
+[2.109361] (-) TimerEvent: {}
+[2.209996] (-) TimerEvent: {}
+[2.310631] (-) TimerEvent: {}
+[2.411262] (-) TimerEvent: {}
+[2.511868] (-) TimerEvent: {}
+[2.613229] (-) TimerEvent: {}
+[2.713844] (-) TimerEvent: {}
+[2.814454] (-) TimerEvent: {}
+[2.915160] (-) TimerEvent: {}
+[3.015786] (-) TimerEvent: {}
+[3.044000] (jetmax_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[3.115934] (-) TimerEvent: {}
+[3.216539] (-) TimerEvent: {}
+[3.266560] (jetmax_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.316673] (-) TimerEvent: {}
+[3.323974] (jetmax_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.416893] (-) TimerEvent: {}
+[3.517486] (-) TimerEvent: {}
+[3.618104] (-) TimerEvent: {}
+[3.718740] (-) TimerEvent: {}
+[3.776283] (jetmax_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[3.818896] (-) TimerEvent: {}
+[3.889079] (jetmax_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[3.919034] (-) TimerEvent: {}
+[4.019996] (-) TimerEvent: {}
+[4.120633] (-) TimerEvent: {}
+[4.221410] (-) TimerEvent: {}
+[4.284548] (jetmax_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.321557] (-) TimerEvent: {}
+[4.422129] (-) TimerEvent: {}
+[4.522729] (-) TimerEvent: {}
+[4.623344] (-) TimerEvent: {}
+[4.648845] (jetmax_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.723490] (-) TimerEvent: {}
+[4.824082] (-) TimerEvent: {}
+[4.924701] (-) TimerEvent: {}
+[5.025341] (-) TimerEvent: {}
+[5.047726] (jetmax_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[5.125489] (-) TimerEvent: {}
+[5.197802] (jetmax_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[5.225631] (-) TimerEvent: {}
+[5.326235] (-) TimerEvent: {}
+[5.426885] (-) TimerEvent: {}
+[5.527585] (-) TimerEvent: {}
+[5.628192] (-) TimerEvent: {}
+[5.728872] (-) TimerEvent: {}
+[5.829486] (-) TimerEvent: {}
+[5.930088] (-) TimerEvent: {}
+[6.030682] (-) TimerEvent: {}
+[6.082109] (jetmax_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[6.130838] (-) TimerEvent: {}
+[6.231442] (-) TimerEvent: {}
+[6.332061] (-) TimerEvent: {}
+[6.432669] (-) TimerEvent: {}
+[6.533327] (-) TimerEvent: {}
+[6.633937] (-) TimerEvent: {}
+[6.734569] (-) TimerEvent: {}
+[6.835178] (-) TimerEvent: {}
+[6.935773] (-) TimerEvent: {}
+[7.036371] (-) TimerEvent: {}
+[7.137018] (-) TimerEvent: {}
+[7.227362] (jetmax_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.237141] (-) TimerEvent: {}
+[7.337705] (-) TimerEvent: {}
+[7.438324] (-) TimerEvent: {}
+[7.538955] (-) TimerEvent: {}
+[7.639584] (-) TimerEvent: {}
+[7.740219] (-) TimerEvent: {}
+[7.840880] (-) TimerEvent: {}
+[7.941494] (-) TimerEvent: {}
+[8.042098] (-) TimerEvent: {}
+[8.143482] (-) TimerEvent: {}
+[8.189915] (jetmax_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.243668] (-) TimerEvent: {}
+[8.332188] (jetmax_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[8.343798] (-) TimerEvent: {}
+[8.363122] (jetmax_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[8.443947] (-) TimerEvent: {}
+[8.544544] (-) TimerEvent: {}
+[8.645191] (-) TimerEvent: {}
+[8.701681] (jetmax_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[8.702560] (jetmax_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.702981] (jetmax_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[8.703349] (jetmax_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[8.745329] (-) TimerEvent: {}
+[8.792008] (jetmax_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[8.845474] (-) TimerEvent: {}
+[8.946061] (-) TimerEvent: {}
+[9.046692] (-) TimerEvent: {}
+[9.147351] (-) TimerEvent: {}
+[9.164982] (jetmax_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[9.177409] (jetmax_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.185022] (jetmax_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.214537] (jetmax_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.247504] (-) TimerEvent: {}
+[9.348142] (-) TimerEvent: {}
+[9.448859] (-) TimerEvent: {}
+[9.487952] (jetmax_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[9.499678] (jetmax_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs\n'}
+[9.535670] (jetmax_msgs) CommandEnded: {'returncode': 0}
+[9.538135] (jetmax_msgs) JobProgress: {'identifier': 'jetmax_msgs', 'progress': 'build'}
+[9.541154] (jetmax_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs', '--', '-j4', '-l4'], 'cwd': '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hiwonder'), ('SSH_CLIENT', '2601:1c0:8301:8270:2dfe:a79f:aac3:ab11 60844 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/local/cuda/lib64:/home/hiwonder/capstone_ws/install/optitrack_interfaces/lib:/home/hiwonder/capstone_ws/install/jetmax_srvs/lib:/home/hiwonder/capstone_ws/install/jetmax_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hiwonder'), ('OLDPWD', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435'), ('TERM_PROGRAM_VERSION', '1.78.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-980a5368-1a22-4f21-8459-ee878fc0aaa7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hiwonder/capstone_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hiwonder'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda/bin:/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/bin/remote-cli:/home/hiwonder/.local/bin:/usr/local/cuda/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ca14ecb137.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/hiwonder/capstone_ws/install/optitrack_plugin:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/optitrack_interfaces:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_srvs:/home/hiwonder/capstone_ws/install/jetmax_control:/home/hiwonder/capstone_ws/install/jetmax_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs'), ('SSH_CONNECTION', '2601:1c0:8301:8270:2dfe:a79f:aac3:ab11 60844 2601:1c0:8301:8270::94bf 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hiwonder/capstone_ws/install/jetmax_demo_3/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/optitrack_interfaces/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_srvs/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_control/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hiwonder/capstone_ws/install/optitrack_plugin:/home/hiwonder/capstone_ws/install/optitrack_interfaces:/home/hiwonder/capstone_ws/install/jetmax_srvs:/home/hiwonder/capstone_ws/install/jetmax_msgs:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy')]), 'shell': False}
+[9.549753] (-) TimerEvent: {}
+[9.621028] (jetmax_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.638246] (jetmax_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[9.650032] (-) TimerEvent: {}
+[9.755901] (-) TimerEvent: {}
+[9.856588] (-) TimerEvent: {}
+[9.957267] (-) TimerEvent: {}
+[10.057957] (-) TimerEvent: {}
+[10.160876] (-) TimerEvent: {}
+[10.261530] (-) TimerEvent: {}
+[10.362183] (-) TimerEvent: {}
+[10.462862] (-) TimerEvent: {}
+[10.563522] (-) TimerEvent: {}
+[10.664155] (-) TimerEvent: {}
+[10.764817] (-) TimerEvent: {}
+[10.865629] (-) TimerEvent: {}
+[10.966223] (-) TimerEvent: {}
+[11.066826] (-) TimerEvent: {}
+[11.167413] (-) TimerEvent: {}
+[11.267988] (-) TimerEvent: {}
+[11.368606] (-) TimerEvent: {}
+[11.469257] (-) TimerEvent: {}
+[11.569860] (-) TimerEvent: {}
+[11.670451] (-) TimerEvent: {}
+[11.786808] (-) TimerEvent: {}
+[11.892150] (-) TimerEvent: {}
+[11.993348] (-) TimerEvent: {}
+[12.095659] (-) TimerEvent: {}
+[12.198668] (-) TimerEvent: {}
+[12.299286] (-) TimerEvent: {}
+[12.399901] (-) TimerEvent: {}
+[12.500582] (-) TimerEvent: {}
+[12.601462] (-) TimerEvent: {}
+[12.702138] (-) TimerEvent: {}
+[12.717662] (jetmax_msgs) StdoutLine: {'line': b'[  3%] Built target jetmax_msgs__cpp\n'}
+[12.737073] (jetmax_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.737855] (jetmax_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.738569] (jetmax_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.802330] (-) TimerEvent: {}
+[12.903827] (-) TimerEvent: {}
+[13.005247] (-) TimerEvent: {}
+[13.109488] (-) TimerEvent: {}
+[13.213635] (-) TimerEvent: {}
+[13.315731] (-) TimerEvent: {}
+[13.421135] (-) TimerEvent: {}
+[13.422251] (jetmax_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_generator_c.dir/rosidl_generator_c/jetmax_msgs/msg/detail/set_motion__functions.c.o\x1b[0m\n'}
+[13.524867] (-) TimerEvent: {}
+[13.625570] (-) TimerEvent: {}
+[13.728326] (-) TimerEvent: {}
+[13.806068] (jetmax_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_generator_c.dir/rosidl_generator_c/jetmax_msgs/msg/detail/position__functions.c.o\x1b[0m\n'}
+[13.828500] (-) TimerEvent: {}
+[13.930758] (-) TimerEvent: {}
+[14.032927] (-) TimerEvent: {}
+[14.135050] (-) TimerEvent: {}
+[14.152144] (jetmax_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_generator_c.dir/rosidl_generator_c/jetmax_msgs/action/detail/path_planning__functions.c.o\x1b[0m\n'}
+[14.235206] (-) TimerEvent: {}
+[14.336555] (-) TimerEvent: {}
+[14.438663] (-) TimerEvent: {}
+[14.540862] (-) TimerEvent: {}
+[14.643013] (-) TimerEvent: {}
+[14.745256] (-) TimerEvent: {}
+[14.757973] (jetmax_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_generator_c.dir/rosidl_generator_c/jetmax_msgs/srv/detail/get_position__functions.c.o\x1b[0m\n'}
+[14.845421] (-) TimerEvent: {}
+[14.946092] (-) TimerEvent: {}
+[14.997679] (jetmax_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_generator_c.dir/rosidl_generator_c/jetmax_msgs/srv/detail/demo1__functions.c.o\x1b[0m\n'}
+[15.046272] (-) TimerEvent: {}
+[15.148872] (-) TimerEvent: {}
+[15.153110] (jetmax_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jetmax_msgs/msg/set_motion__type_support.cpp.o\x1b[0m\n'}
+[15.238986] (jetmax_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libjetmax_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[15.249042] (-) TimerEvent: {}
+[15.351401] (-) TimerEvent: {}
+[15.436817] (jetmax_msgs) StdoutLine: {'line': b'[ 19%] Built target jetmax_msgs__rosidl_generator_c\n'}
+[15.442447] (jetmax_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jetmax_msgs/msg/detail/set_motion__type_support.cpp.o\x1b[0m\n'}
+[15.451577] (-) TimerEvent: {}
+[15.455381] (jetmax_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jetmax_msgs/msg/position__type_support.cpp.o\x1b[0m\n'}
+[15.551762] (-) TimerEvent: {}
+[15.654260] (-) TimerEvent: {}
+[15.756622] (-) TimerEvent: {}
+[15.858803] (-) TimerEvent: {}
+[15.960939] (-) TimerEvent: {}
+[16.063262] (-) TimerEvent: {}
+[16.165780] (-) TimerEvent: {}
+[16.239963] (jetmax_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jetmax_msgs/msg/detail/dds_fastrtps/set_motion__type_support.cpp.o\x1b[0m\n'}
+[16.265970] (-) TimerEvent: {}
+[16.368332] (-) TimerEvent: {}
+[16.470672] (-) TimerEvent: {}
+[16.572942] (-) TimerEvent: {}
+[16.600089] (jetmax_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jetmax_msgs/msg/detail/dds_fastrtps/position__type_support.cpp.o\x1b[0m\n'}
+[16.673115] (-) TimerEvent: {}
+[16.761889] (jetmax_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jetmax_msgs/msg/detail/position__type_support.cpp.o\x1b[0m\n'}
+[16.773293] (-) TimerEvent: {}
+[16.788945] (jetmax_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jetmax_msgs/action/path_planning__type_support.cpp.o\x1b[0m\n'}
+[16.873465] (-) TimerEvent: {}
+[16.975828] (-) TimerEvent: {}
+[17.078182] (-) TimerEvent: {}
+[17.180540] (-) TimerEvent: {}
+[17.283460] (-) TimerEvent: {}
+[17.394071] (-) TimerEvent: {}
+[17.494786] (-) TimerEvent: {}
+[17.595515] (-) TimerEvent: {}
+[17.697838] (-) TimerEvent: {}
+[17.798582] (-) TimerEvent: {}
+[17.899278] (-) TimerEvent: {}
+[18.001880] (-) TimerEvent: {}
+[18.104560] (-) TimerEvent: {}
+[18.169552] (jetmax_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jetmax_msgs/action/detail/path_planning__type_support.cpp.o\x1b[0m\n'}
+[18.204911] (-) TimerEvent: {}
+[18.306422] (-) TimerEvent: {}
+[18.377505] (jetmax_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jetmax_msgs/action/detail/dds_fastrtps/path_planning__type_support.cpp.o\x1b[0m\n'}
+[18.406613] (-) TimerEvent: {}
+[18.473844] (jetmax_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jetmax_msgs/srv/get_position__type_support.cpp.o\x1b[0m\n'}
+[18.506804] (-) TimerEvent: {}
+[18.612333] (-) TimerEvent: {}
+[18.712325] (jetmax_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jetmax_msgs/srv/detail/dds_fastrtps/get_position__type_support.cpp.o\x1b[0m\n'}
+[18.713025] (-) TimerEvent: {}
+[18.814433] (-) TimerEvent: {}
+[18.915117] (-) TimerEvent: {}
+[19.017663] (-) TimerEvent: {}
+[19.119861] (-) TimerEvent: {}
+[19.222241] (-) TimerEvent: {}
+[19.323679] (-) TimerEvent: {}
+[19.426507] (-) TimerEvent: {}
+[19.527263] (-) TimerEvent: {}
+[19.629077] (-) TimerEvent: {}
+[19.729784] (-) TimerEvent: {}
+[19.830950] (-) TimerEvent: {}
+[19.931680] (-) TimerEvent: {}
+[20.033936] (-) TimerEvent: {}
+[20.136266] (-) TimerEvent: {}
+[20.237797] (-) TimerEvent: {}
+[20.286077] (jetmax_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jetmax_msgs/srv/demo1__type_support.cpp.o\x1b[0m\n'}
+[20.337983] (-) TimerEvent: {}
+[20.440450] (-) TimerEvent: {}
+[20.460673] (jetmax_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jetmax_msgs/srv/detail/get_position__type_support.cpp.o\x1b[0m\n'}
+[20.540643] (-) TimerEvent: {}
+[20.642858] (-) TimerEvent: {}
+[20.745089] (-) TimerEvent: {}
+[20.847323] (-) TimerEvent: {}
+[20.949683] (-) TimerEvent: {}
+[21.051833] (-) TimerEvent: {}
+[21.154578] (-) TimerEvent: {}
+[21.203084] (jetmax_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jetmax_msgs/srv/detail/dds_fastrtps/demo1__type_support.cpp.o\x1b[0m\n'}
+[21.254780] (-) TimerEvent: {}
+[21.357094] (-) TimerEvent: {}
+[21.457777] (-) TimerEvent: {}
+[21.559969] (-) TimerEvent: {}
+[21.598561] (jetmax_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jetmax_msgs/srv/detail/demo1__type_support.cpp.o\x1b[0m\n'}
+[21.660156] (-) TimerEvent: {}
+[21.762563] (-) TimerEvent: {}
+[21.864986] (-) TimerEvent: {}
+[21.875919] (jetmax_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libjetmax_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[21.965158] (-) TimerEvent: {}
+[22.002754] (jetmax_msgs) StdoutLine: {'line': b'[ 42%] Built target jetmax_msgs__rosidl_typesupport_cpp\n'}
+[22.034426] (jetmax_msgs) StdoutLine: {'line': b'[ 44%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[22.065320] (-) TimerEvent: {}
+[22.167645] (-) TimerEvent: {}
+[22.269952] (-) TimerEvent: {}
+[22.306940] (jetmax_msgs) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[22.370135] (-) TimerEvent: {}
+[22.472372] (-) TimerEvent: {}
+[22.574682] (-) TimerEvent: {}
+[22.676313] (-) TimerEvent: {}
+[22.777001] (-) TimerEvent: {}
+[22.877724] (-) TimerEvent: {}
+[22.979778] (-) TimerEvent: {}
+[23.081902] (-) TimerEvent: {}
+[23.182582] (-) TimerEvent: {}
+[23.284384] (-) TimerEvent: {}
+[23.385053] (-) TimerEvent: {}
+[23.486471] (-) TimerEvent: {}
+[23.506833] (jetmax_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libjetmax_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[23.586637] (-) TimerEvent: {}
+[23.688005] (-) TimerEvent: {}
+[23.789402] (-) TimerEvent: {}
+[23.890772] (-) TimerEvent: {}
+[23.921752] (jetmax_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libjetmax_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[23.990938] (-) TimerEvent: {}
+[24.021226] (jetmax_msgs) StdoutLine: {'line': b'[ 49%] Built target jetmax_msgs__rosidl_typesupport_introspection_cpp\n'}
+[24.091115] (-) TimerEvent: {}
+[24.192501] (-) TimerEvent: {}
+[24.293899] (-) TimerEvent: {}
+[24.319575] (jetmax_msgs) StdoutLine: {'line': b'[ 49%] Built target jetmax_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[24.338402] (jetmax_msgs) StdoutLine: {'line': b'[ 50%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[24.394059] (-) TimerEvent: {}
+[24.496134] (-) TimerEvent: {}
+[24.597526] (-) TimerEvent: {}
+[24.603228] (jetmax_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jetmax_msgs/msg/position__type_support.cpp.o\x1b[0m\n'}
+[24.604490] (jetmax_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jetmax_msgs/msg/set_motion__type_support.cpp.o\x1b[0m\n'}
+[24.697692] (-) TimerEvent: {}
+[24.710841] (jetmax_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jetmax_msgs/srv/get_position__type_support.cpp.o\x1b[0m\n'}
+[24.711700] (jetmax_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jetmax_msgs/action/path_planning__type_support.cpp.o\x1b[0m\n'}
+[24.797852] (-) TimerEvent: {}
+[24.834706] (jetmax_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jetmax_msgs/srv/demo1__type_support.cpp.o\x1b[0m\n'}
+[24.898028] (-) TimerEvent: {}
+[24.950980] (jetmax_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libjetmax_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[24.998204] (-) TimerEvent: {}
+[25.044221] (jetmax_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jetmax_msgs/msg/detail/position__type_support.c.o\x1b[0m\n'}
+[25.044973] (jetmax_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jetmax_msgs/msg/detail/set_motion__type_support.c.o\x1b[0m\n'}
+[25.081573] (jetmax_msgs) StdoutLine: {'line': b'[ 63%] Built target jetmax_msgs__rosidl_typesupport_c\n'}
+[25.094653] (jetmax_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jetmax_msgs/action/detail/path_planning__type_support.c.o\x1b[0m\n'}
+[25.098375] (-) TimerEvent: {}
+[25.161664] (jetmax_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jetmax_msgs/srv/detail/demo1__type_support.c.o\x1b[0m\n'}
+[25.163312] (jetmax_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jetmax_msgs/srv/detail/get_position__type_support.c.o\x1b[0m\n'}
+[25.198551] (-) TimerEvent: {}
+[25.299936] (-) TimerEvent: {}
+[25.301775] (jetmax_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking C shared library libjetmax_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[25.390741] (jetmax_msgs) StdoutLine: {'line': b'[ 69%] Built target jetmax_msgs__rosidl_typesupport_introspection_c\n'}
+[25.400124] (-) TimerEvent: {}
+[25.500805] (-) TimerEvent: {}
+[25.601426] (-) TimerEvent: {}
+[25.702031] (-) TimerEvent: {}
+[25.802636] (-) TimerEvent: {}
+[25.903239] (-) TimerEvent: {}
+[26.003848] (-) TimerEvent: {}
+[26.104568] (-) TimerEvent: {}
+[26.205228] (-) TimerEvent: {}
+[26.305846] (-) TimerEvent: {}
+[26.406413] (-) TimerEvent: {}
+[26.506969] (-) TimerEvent: {}
+[26.607530] (-) TimerEvent: {}
+[26.708106] (-) TimerEvent: {}
+[26.808706] (-) TimerEvent: {}
+[26.909343] (-) TimerEvent: {}
+[27.009902] (-) TimerEvent: {}
+[27.110494] (-) TimerEvent: {}
+[27.200066] (jetmax_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jetmax_msgs/msg/detail/position__type_support_c.cpp.o\x1b[0m\n'}
+[27.200828] (jetmax_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jetmax_msgs/msg/detail/set_motion__type_support_c.cpp.o\x1b[0m\n'}
+[27.204451] (jetmax_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jetmax_msgs/srv/detail/get_position__type_support_c.cpp.o\x1b[0m\n'}
+[27.210683] (-) TimerEvent: {}
+[27.212210] (jetmax_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jetmax_msgs/action/detail/path_planning__type_support_c.cpp.o\x1b[0m\n'}
+[27.310853] (-) TimerEvent: {}
+[27.411510] (-) TimerEvent: {}
+[27.513718] (-) TimerEvent: {}
+[27.614437] (-) TimerEvent: {}
+[27.715194] (-) TimerEvent: {}
+[27.815950] (-) TimerEvent: {}
+[27.916716] (-) TimerEvent: {}
+[28.018959] (-) TimerEvent: {}
+[28.121491] (-) TimerEvent: {}
+[28.222197] (-) TimerEvent: {}
+[28.324490] (-) TimerEvent: {}
+[28.426023] (-) TimerEvent: {}
+[28.526880] (-) TimerEvent: {}
+[28.629009] (-) TimerEvent: {}
+[28.731285] (-) TimerEvent: {}
+[28.833768] (-) TimerEvent: {}
+[28.865794] (jetmax_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jetmax_msgs/srv/detail/demo1__type_support_c.cpp.o\x1b[0m\n'}
+[28.933955] (-) TimerEvent: {}
+[29.036261] (-) TimerEvent: {}
+[29.139081] (-) TimerEvent: {}
+[29.239772] (-) TimerEvent: {}
+[29.340445] (-) TimerEvent: {}
+[29.441167] (-) TimerEvent: {}
+[29.541806] (-) TimerEvent: {}
+[29.642434] (-) TimerEvent: {}
+[29.743147] (-) TimerEvent: {}
+[29.843780] (-) TimerEvent: {}
+[29.944445] (-) TimerEvent: {}
+[30.045158] (-) TimerEvent: {}
+[30.145763] (-) TimerEvent: {}
+[30.246407] (-) TimerEvent: {}
+[30.347045] (-) TimerEvent: {}
+[30.447679] (-) TimerEvent: {}
+[30.463904] (jetmax_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libjetmax_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[30.547850] (-) TimerEvent: {}
+[30.648533] (-) TimerEvent: {}
+[30.749286] (-) TimerEvent: {}
+[30.761081] (jetmax_msgs) StdoutLine: {'line': b'[ 79%] Built target jetmax_msgs__rosidl_typesupport_fastrtps_c\n'}
+[30.793163] (jetmax_msgs) StdoutLine: {'line': b'[ 79%] Built target jetmax_msgs\n'}
+[30.827886] (jetmax_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[30.849424] (-) TimerEvent: {}
+[30.950022] (-) TimerEvent: {}
+[31.050631] (-) TimerEvent: {}
+[31.151287] (-) TimerEvent: {}
+[31.252042] (-) TimerEvent: {}
+[31.352679] (-) TimerEvent: {}
+[31.453354] (-) TimerEvent: {}
+[31.553960] (-) TimerEvent: {}
+[31.654568] (-) TimerEvent: {}
+[31.755207] (-) TimerEvent: {}
+[31.855833] (-) TimerEvent: {}
+[31.957724] (-) TimerEvent: {}
+[32.058335] (-) TimerEvent: {}
+[32.160857] (-) TimerEvent: {}
+[32.264866] (-) TimerEvent: {}
+[32.365460] (-) TimerEvent: {}
+[32.466072] (-) TimerEvent: {}
+[32.566735] (-) TimerEvent: {}
+[32.667568] (-) TimerEvent: {}
+[32.780849] (-) TimerEvent: {}
+[32.881447] (-) TimerEvent: {}
+[32.982036] (-) TimerEvent: {}
+[33.083755] (-) TimerEvent: {}
+[33.184345] (-) TimerEvent: {}
+[33.284923] (-) TimerEvent: {}
+[33.385486] (-) TimerEvent: {}
+[33.487304] (-) TimerEvent: {}
+[33.589123] (-) TimerEvent: {}
+[33.690916] (-) TimerEvent: {}
+[33.792984] (-) TimerEvent: {}
+[33.894826] (-) TimerEvent: {}
+[33.996610] (-) TimerEvent: {}
+[34.098529] (-) TimerEvent: {}
+[34.200419] (-) TimerEvent: {}
+[34.301095] (-) TimerEvent: {}
+[34.403236] (-) TimerEvent: {}
+[34.503857] (-) TimerEvent: {}
+[34.605757] (-) TimerEvent: {}
+[34.707587] (-) TimerEvent: {}
+[34.808815] (-) TimerEvent: {}
+[34.910032] (-) TimerEvent: {}
+[35.011252] (-) TimerEvent: {}
+[35.112440] (-) TimerEvent: {}
+[35.215257] (-) TimerEvent: {}
+[35.317152] (-) TimerEvent: {}
+[35.418843] (-) TimerEvent: {}
+[35.520054] (-) TimerEvent: {}
+[35.621260] (-) TimerEvent: {}
+[35.721866] (-) TimerEvent: {}
+[35.822455] (-) TimerEvent: {}
+[35.923663] (-) TimerEvent: {}
+[36.024249] (-) TimerEvent: {}
+[36.124838] (-) TimerEvent: {}
+[36.225457] (-) TimerEvent: {}
+[36.326868] (-) TimerEvent: {}
+[36.427475] (-) TimerEvent: {}
+[36.528092] (-) TimerEvent: {}
+[36.629827] (-) TimerEvent: {}
+[36.730973] (-) TimerEvent: {}
+[36.832704] (-) TimerEvent: {}
+[36.942471] (-) TimerEvent: {}
+[37.044886] (-) TimerEvent: {}
+[37.148865] (-) TimerEvent: {}
+[37.252858] (-) TimerEvent: {}
+[37.360861] (-) TimerEvent: {}
+[37.462541] (-) TimerEvent: {}
+[37.564515] (-) TimerEvent: {}
+[37.666093] (-) TimerEvent: {}
+[37.768106] (-) TimerEvent: {}
+[37.868702] (-) TimerEvent: {}
+[37.969345] (-) TimerEvent: {}
+[38.069924] (-) TimerEvent: {}
+[38.171122] (-) TimerEvent: {}
+[38.272841] (-) TimerEvent: {}
+[38.374863] (-) TimerEvent: {}
+[38.476618] (-) TimerEvent: {}
+[38.578421] (-) TimerEvent: {}
+[38.680281] (-) TimerEvent: {}
+[38.782145] (-) TimerEvent: {}
+[38.884476] (-) TimerEvent: {}
+[38.986322] (-) TimerEvent: {}
+[39.088168] (-) TimerEvent: {}
+[39.188759] (-) TimerEvent: {}
+[39.289329] (-) TimerEvent: {}
+[39.391155] (-) TimerEvent: {}
+[39.492986] (-) TimerEvent: {}
+[39.594711] (-) TimerEvent: {}
+[39.695283] (-) TimerEvent: {}
+[39.795832] (-) TimerEvent: {}
+[39.896385] (-) TimerEvent: {}
+[39.996970] (-) TimerEvent: {}
+[40.097619] (-) TimerEvent: {}
+[40.199613] (-) TimerEvent: {}
+[40.301525] (-) TimerEvent: {}
+[40.403311] (-) TimerEvent: {}
+[40.503864] (-) TimerEvent: {}
+[40.604460] (-) TimerEvent: {}
+[40.705070] (-) TimerEvent: {}
+[40.805649] (-) TimerEvent: {}
+[40.906200] (-) TimerEvent: {}
+[41.006780] (-) TimerEvent: {}
+[41.107343] (-) TimerEvent: {}
+[41.207932] (-) TimerEvent: {}
+[41.308596] (-) TimerEvent: {}
+[41.393723] (jetmax_msgs) StdoutLine: {'line': b'[ 80%] Built target jetmax_msgs__py\n'}
+[41.408801] (-) TimerEvent: {}
+[41.428961] (jetmax_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__python.dir/rosidl_generator_py/jetmax_msgs/msg/_position_s.c.o\x1b[0m\n'}
+[41.429907] (jetmax_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__python.dir/rosidl_generator_py/jetmax_msgs/srv/_get_position_s.c.o\x1b[0m\n'}
+[41.430707] (jetmax_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__python.dir/rosidl_generator_py/jetmax_msgs/msg/_set_motion_s.c.o\x1b[0m\n'}
+[41.431213] (jetmax_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__python.dir/rosidl_generator_py/jetmax_msgs/action/_path_planning_s.c.o\x1b[0m\n'}
+[41.509049] (-) TimerEvent: {}
+[41.611214] (-) TimerEvent: {}
+[41.712667] (-) TimerEvent: {}
+[41.814020] (-) TimerEvent: {}
+[41.914758] (-) TimerEvent: {}
+[41.943913] (jetmax_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__python.dir/rosidl_generator_py/jetmax_msgs/srv/_demo1_s.c.o\x1b[0m\n'}
+[42.014932] (-) TimerEvent: {}
+[42.115608] (-) TimerEvent: {}
+[42.216257] (-) TimerEvent: {}
+[42.316915] (-) TimerEvent: {}
+[42.348589] (jetmax_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/jetmax_msgs/libjetmax_msgs__python.so\x1b[0m\n'}
+[42.417088] (-) TimerEvent: {}
+[42.517767] (-) TimerEvent: {}
+[42.524149] (jetmax_msgs) StdoutLine: {'line': b'[ 90%] Built target jetmax_msgs__python\n'}
+[42.562062] (jetmax_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/jetmax_msgs/_jetmax_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[42.564081] (jetmax_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/jetmax_msgs/_jetmax_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[42.565525] (jetmax_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/jetmax_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/jetmax_msgs/_jetmax_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[42.617940] (-) TimerEvent: {}
+[42.718653] (-) TimerEvent: {}
+[42.820668] (-) TimerEvent: {}
+[42.924239] (-) TimerEvent: {}
+[43.026157] (-) TimerEvent: {}
+[43.126788] (-) TimerEvent: {}
+[43.148784] (jetmax_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[43.169185] (jetmax_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[43.200548] (jetmax_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[43.228884] (-) TimerEvent: {}
+[43.331759] (-) TimerEvent: {}
+[43.371470] (jetmax_msgs) StdoutLine: {'line': b'[100%] Built target jetmax_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[43.381825] (jetmax_msgs) StdoutLine: {'line': b'[100%] Built target jetmax_msgs__rosidl_typesupport_c__pyext\n'}
+[43.431935] (-) TimerEvent: {}
+[43.534333] (-) TimerEvent: {}
+[43.567322] (jetmax_msgs) StdoutLine: {'line': b'[100%] Built target jetmax_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[43.593214] (jetmax_msgs) CommandEnded: {'returncode': 0}
+[43.634539] (-) TimerEvent: {}
+[43.736988] (-) TimerEvent: {}
+[43.838820] (-) TimerEvent: {}
+[43.939494] (-) TimerEvent: {}
+[44.014261] (jetmax_msgs) JobProgress: {'identifier': 'jetmax_msgs', 'progress': 'install'}
+[44.033159] (jetmax_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs'], 'cwd': '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hiwonder'), ('SSH_CLIENT', '2601:1c0:8301:8270:2dfe:a79f:aac3:ab11 60844 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/local/cuda/lib64:/home/hiwonder/capstone_ws/install/optitrack_interfaces/lib:/home/hiwonder/capstone_ws/install/jetmax_srvs/lib:/home/hiwonder/capstone_ws/install/jetmax_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hiwonder'), ('OLDPWD', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435'), ('TERM_PROGRAM_VERSION', '1.78.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-980a5368-1a22-4f21-8459-ee878fc0aaa7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hiwonder/capstone_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hiwonder'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda/bin:/home/hiwonder/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/bin/remote-cli:/home/hiwonder/.local/bin:/usr/local/cuda/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ca14ecb137.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/hiwonder/capstone_ws/install/optitrack_plugin:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/optitrack_interfaces:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_srvs:/home/hiwonder/capstone_ws/install/jetmax_control:/home/hiwonder/capstone_ws/install/jetmax_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs'), ('SSH_CONNECTION', '2601:1c0:8301:8270:2dfe:a79f:aac3:ab11 60844 2601:1c0:8301:8270::94bf 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hiwonder/capstone_ws/install/jetmax_demo_3/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/optitrack_interfaces/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_srvs/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_control/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hiwonder/capstone_ws/install/optitrack_plugin:/home/hiwonder/capstone_ws/install/optitrack_interfaces:/home/hiwonder/capstone_ws/install/jetmax_srvs:/home/hiwonder/capstone_ws/install/jetmax_msgs:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy')]), 'shell': False}
+[44.039545] (-) TimerEvent: {}
+[44.051654] (jetmax_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[44.052344] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/ament_index/resource_index/rosidl_interfaces/jetmax_msgs\n'}
+[44.053006] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs\n'}
+[44.053492] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv\n'}
+[44.053898] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/demo1.h\n'}
+[44.054300] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail\n'}
+[44.054701] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__struct.h\n'}
+[44.055089] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__type_support.h\n'}
+[44.055463] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__type_support.h\n'}
+[44.055834] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__functions.h\n'}
+[44.056264] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__functions.c\n'}
+[44.056828] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__functions.c\n'}
+[44.057360] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__struct.h\n'}
+[44.057813] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__functions.h\n'}
+[44.058325] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/get_position.h\n'}
+[44.058723] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action\n'}
+[44.059087] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail\n'}
+[44.059457] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__functions.c\n'}
+[44.060019] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__functions.h\n'}
+[44.060707] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__type_support.h\n'}
+[44.061290] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__struct.h\n'}
+[44.061765] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/path_planning.h\n'}
+[44.062168] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg\n'}
+[44.062534] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail\n'}
+[44.062889] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__functions.c\n'}
+[44.063285] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__functions.h\n'}
+[44.063708] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__functions.c\n'}
+[44.064189] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__type_support.h\n'}
+[44.064646] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__struct.h\n'}
+[44.065140] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__struct.h\n'}
+[44.065585] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__functions.h\n'}
+[44.066062] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__type_support.h\n'}
+[44.066527] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/position.h\n'}
+[44.066974] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[44.067445] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/set_motion.h\n'}
+[44.068222] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/library_path.sh\n'}
+[44.068834] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/library_path.dsv\n'}
+[44.069609] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_generator_c.so\n'}
+[44.071409] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_generator_c.so" to ""\n'}
+[44.071906] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs\n'}
+[44.072341] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv\n'}
+[44.072682] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail\n'}
+[44.073140] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__rosidl_typesupport_fastrtps_c.h\n'}
+[44.073568] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__rosidl_typesupport_fastrtps_c.h\n'}
+[44.073945] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action\n'}
+[44.074366] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail\n'}
+[44.074735] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__rosidl_typesupport_fastrtps_c.h\n'}
+[44.075105] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg\n'}
+[44.075420] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail\n'}
+[44.075780] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__rosidl_typesupport_fastrtps_c.h\n'}
+[44.076118] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__rosidl_typesupport_fastrtps_c.h\n'}
+[44.076545] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[44.076949] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[44.077792] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[44.078262] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs\n'}
+[44.078694] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv\n'}
+[44.079035] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail\n'}
+[44.079435] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.079829] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/dds_fastrtps\n'}
+[44.080240] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.080610] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action\n'}
+[44.081068] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail\n'}
+[44.081494] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.081891] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/dds_fastrtps\n'}
+[44.082268] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg\n'}
+[44.082632] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail\n'}
+[44.083007] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.083336] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.083738] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/dds_fastrtps\n'}
+[44.084085] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[44.084425] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[44.085530] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[44.086021] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs\n'}
+[44.086465] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv\n'}
+[44.086800] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail\n'}
+[44.087187] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__type_support.c\n'}
+[44.087575] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__rosidl_typesupport_introspection_c.h\n'}
+[44.087946] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__rosidl_typesupport_introspection_c.h\n'}
+[44.088288] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__type_support.c\n'}
+[44.088705] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action\n'}
+[44.089130] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail\n'}
+[44.089541] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__rosidl_typesupport_introspection_c.h\n'}
+[44.089880] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__type_support.c\n'}
+[44.090308] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg\n'}
+[44.090677] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail\n'}
+[44.091049] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__rosidl_typesupport_introspection_c.h\n'}
+[44.091414] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__type_support.c\n'}
+[44.091749] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__type_support.c\n'}
+[44.092114] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__rosidl_typesupport_introspection_c.h\n'}
+[44.092470] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[44.093077] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_introspection_c.so\n'}
+[44.094593] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[44.095042] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_c.so\n'}
+[44.096420] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_c.so" to ""\n'}
+[44.096961] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs\n'}
+[44.097422] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv\n'}
+[44.097812] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail\n'}
+[44.098149] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__struct.hpp\n'}
+[44.098534] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__traits.hpp\n'}
+[44.098943] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__traits.hpp\n'}
+[44.099336] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__struct.hpp\n'}
+[44.099712] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__builder.hpp\n'}
+[44.100034] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__builder.hpp\n'}
+[44.100399] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/demo1.hpp\n'}
+[44.100833] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/get_position.hpp\n'}
+[44.101294] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action\n'}
+[44.101679] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail\n'}
+[44.102054] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__traits.hpp\n'}
+[44.102378] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__builder.hpp\n'}
+[44.102754] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__struct.hpp\n'}
+[44.103129] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/path_planning.hpp\n'}
+[44.103489] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg\n'}
+[44.103895] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail\n'}
+[44.104220] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__builder.hpp\n'}
+[44.104581] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__builder.hpp\n'}
+[44.105020] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__traits.hpp\n'}
+[44.105402] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__traits.hpp\n'}
+[44.105762] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__struct.hpp\n'}
+[44.106185] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__struct.hpp\n'}
+[44.106603] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/position.hpp\n'}
+[44.107021] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/set_motion.hpp\n'}
+[44.107576] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs\n'}
+[44.108076] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv\n'}
+[44.108484] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail\n'}
+[44.108936] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[44.109328] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/get_position__type_support.cpp\n'}
+[44.109657] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__rosidl_typesupport_introspection_cpp.hpp\n'}
+[44.110066] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/srv/detail/demo1__type_support.cpp\n'}
+[44.110487] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action\n'}
+[44.110863] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail\n'}
+[44.111194] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__type_support.cpp\n'}
+[44.111571] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/action/detail/path_planning__rosidl_typesupport_introspection_cpp.hpp\n'}
+[44.111941] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg\n'}
+[44.112346] (jetmax_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail\n'}
+[44.112705] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__type_support.cpp\n'}
+[44.113097] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[44.113485] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/position__type_support.cpp\n'}
+[44.113854] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/include/jetmax_msgs/msg/detail/set_motion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[44.114447] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[44.116372] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[44.116953] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_cpp.so\n'}
+[44.118163] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[44.118627] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/pythonpath.sh\n'}
+[44.119072] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/pythonpath.dsv\n'}
+[44.119858] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/__init__.py\n'}
+[44.139659] (-) TimerEvent: {}
+[44.240243] (-) TimerEvent: {}
+[44.252225] (jetmax_msgs) StdoutLine: {'line': b"Compiling '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/__init__.py'...\n"}
+[44.273207] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg\n'}
+[44.273874] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg/_position.py\n'}
+[44.274316] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg/_position_s.c\n'}
+[44.274713] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg/_set_motion.py\n'}
+[44.275127] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg/__init__.py\n'}
+[44.275545] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/msg/_set_motion_s.c\n'}
+[44.276086] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/action\n'}
+[44.276548] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/action/_path_planning_s.c\n'}
+[44.277154] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/action/_path_planning.py\n'}
+[44.277832] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/action/__init__.py\n'}
+[44.278426] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/srv\n'}
+[44.278826] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/srv/_get_position.py\n'}
+[44.279298] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/srv/_get_position_s.c\n'}
+[44.279792] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/srv/__init__.py\n'}
+[44.280234] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/srv/_demo1.py\n'}
+[44.280719] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/srv/_demo1_s.c\n'}
+[44.281546] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[44.283061] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[44.283484] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[44.285000] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[44.285447] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[44.286927] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages/jetmax_msgs/jetmax_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[44.287346] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__python.so\n'}
+[44.288899] (jetmax_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/libjetmax_msgs__python.so" to ""\n'}
+[44.289361] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/msg/SetMotion.idl\n'}
+[44.289868] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/msg/Position.idl\n'}
+[44.290577] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/action/PathPlanning.idl\n'}
+[44.291243] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/srv/GetPosition.idl\n'}
+[44.291808] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/srv/Demo1.idl\n'}
+[44.292329] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/msg/SetMotion.msg\n'}
+[44.292896] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/msg/Position.msg\n'}
+[44.293432] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/action/PathPlanning.action\n'}
+[44.293963] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/srv/GetPosition.srv\n'}
+[44.294480] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/srv/GetPosition_Request.msg\n'}
+[44.295011] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/srv/GetPosition_Response.msg\n'}
+[44.295523] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/srv/Demo1.srv\n'}
+[44.296034] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/srv/Demo1_Request.msg\n'}
+[44.296552] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/srv/Demo1_Response.msg\n'}
+[44.297328] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/ament_index/resource_index/package_run_dependencies/jetmax_msgs\n'}
+[44.298084] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/ament_index/resource_index/parent_prefix_path/jetmax_msgs\n'}
+[44.298664] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/ament_prefix_path.sh\n'}
+[44.299199] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/ament_prefix_path.dsv\n'}
+[44.299735] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/path.sh\n'}
+[44.300247] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/environment/path.dsv\n'}
+[44.300813] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/local_setup.bash\n'}
+[44.301346] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/local_setup.sh\n'}
+[44.301882] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/local_setup.zsh\n'}
+[44.302424] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/local_setup.dsv\n'}
+[44.302941] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.dsv\n'}
+[44.303629] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/ament_index/resource_index/packages/jetmax_msgs\n'}
+[44.304358] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_generator_cExport.cmake\n'}
+[44.305036] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[44.305730] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[44.306368] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[44.307044] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_cExport.cmake\n'}
+[44.307649] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[44.308296] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_generator_cppExport.cmake\n'}
+[44.309086] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[44.309733] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[44.310402] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[44.311084] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[44.311632] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[44.312198] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[44.312873] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[44.313462] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[44.314050] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[44.314636] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[44.315214] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[44.315802] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgsConfig.cmake\n'}
+[44.316242] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/cmake/jetmax_msgsConfig-version.cmake\n'}
+[44.316818] (jetmax_msgs) StdoutLine: {'line': b'-- Installing: /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.xml\n'}
+[44.321773] (jetmax_msgs) CommandEnded: {'returncode': 0}
+[44.340357] (-) TimerEvent: {}
+[44.442907] (-) TimerEvent: {}
+[44.543579] (-) TimerEvent: {}
+[44.644339] (-) TimerEvent: {}
+[44.745120] (-) TimerEvent: {}
+[44.846114] (-) TimerEvent: {}
+[44.876070] (jetmax_msgs) JobEnded: {'identifier': 'jetmax_msgs', 'rc': 0}
+[44.878849] (-) EventReactorShutdown: {}

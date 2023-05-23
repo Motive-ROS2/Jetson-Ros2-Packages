@@ -1,0 +1,198 @@
+[2.055s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'jetmax_msgs']
+[2.055s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb2b3b3a0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['jetmax_msgs'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb2b3b3a0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fb2b3b8e0>)
+[2.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.237s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages'
+[2.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.339s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.339s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.339s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.340s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.341s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.341s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.341s] Level 1:colcon.colcon_core.package_identification:_identify(demo1) by extensions ['ignore', 'ignore_ament_install']
+[2.342s] Level 1:colcon.colcon_core.package_identification:_identify(demo1) by extension 'ignore'
+[2.342s] Level 1:colcon.colcon_core.package_identification:_identify(demo1) by extension 'ignore_ament_install'
+[2.342s] Level 1:colcon.colcon_core.package_identification:_identify(demo1) by extensions ['colcon_pkg']
+[2.342s] Level 1:colcon.colcon_core.package_identification:_identify(demo1) by extension 'colcon_pkg'
+[2.342s] Level 1:colcon.colcon_core.package_identification:_identify(demo1) by extensions ['colcon_meta']
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(demo1) by extension 'colcon_meta'
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(demo1) by extensions ['ros']
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(demo1) by extension 'ros'
+[2.358s] DEBUG:colcon.colcon_core.package_identification:Package 'demo1' with type 'ros.ament_python' and name 'demo1'
+[2.358s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.359s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.359s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.359s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_control) by extensions ['ignore', 'ignore_ament_install']
+[2.360s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_control) by extension 'ignore'
+[2.360s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_control) by extension 'ignore_ament_install'
+[2.360s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_control) by extensions ['colcon_pkg']
+[2.360s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_control) by extension 'colcon_pkg'
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_control) by extensions ['colcon_meta']
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_control) by extension 'colcon_meta'
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_control) by extensions ['ros']
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_control) by extension 'ros'
+[2.366s] DEBUG:colcon.colcon_core.package_identification:Package 'jetmax_control' with type 'ros.ament_python' and name 'jetmax_control'
+[2.366s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_demo_3) by extensions ['ignore', 'ignore_ament_install']
+[2.367s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_demo_3) by extension 'ignore'
+[2.367s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_demo_3) by extension 'ignore_ament_install'
+[2.367s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_demo_3) by extensions ['colcon_pkg']
+[2.367s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_demo_3) by extension 'colcon_pkg'
+[2.367s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_demo_3) by extensions ['colcon_meta']
+[2.368s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_demo_3) by extension 'colcon_meta'
+[2.368s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_demo_3) by extensions ['ros']
+[2.368s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_demo_3) by extension 'ros'
+[2.371s] DEBUG:colcon.colcon_core.package_identification:Package 'jetmax_demo_3' with type 'ros.ament_python' and name 'jetmax_demo_3'
+[2.371s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.372s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_msgs) by extension 'ignore'
+[2.372s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_msgs) by extension 'ignore_ament_install'
+[2.372s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_msgs) by extensions ['colcon_pkg']
+[2.372s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_msgs) by extension 'colcon_pkg'
+[2.373s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_msgs) by extensions ['colcon_meta']
+[2.373s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_msgs) by extension 'colcon_meta'
+[2.373s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_msgs) by extensions ['ros']
+[2.373s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_msgs) by extension 'ros'
+[2.375s] DEBUG:colcon.colcon_core.package_identification:Package 'jetmax_msgs' with type 'ros.ament_cmake' and name 'jetmax_msgs'
+[2.376s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_srvs) by extensions ['ignore', 'ignore_ament_install']
+[2.376s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_srvs) by extension 'ignore'
+[2.376s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_srvs) by extension 'ignore_ament_install'
+[2.377s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_srvs) by extensions ['colcon_pkg']
+[2.377s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_srvs) by extension 'colcon_pkg'
+[2.377s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_srvs) by extensions ['colcon_meta']
+[2.377s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_srvs) by extension 'colcon_meta'
+[2.377s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_srvs) by extensions ['ros']
+[2.377s] Level 1:colcon.colcon_core.package_identification:_identify(jetmax_srvs) by extension 'ros'
+[2.382s] DEBUG:colcon.colcon_core.package_identification:Package 'jetmax_srvs' with type 'ros.ament_cmake' and name 'jetmax_srvs'
+[2.382s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.383s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.383s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.510s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'jetmax_srvs' in 'jetmax_srvs'
+[2.510s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'demo1' in 'demo1'
+[2.510s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'jetmax_control' in 'jetmax_control'
+[2.510s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'jetmax_demo_3' in 'jetmax_demo_3'
+[2.516s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.516s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.536s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/hiwonder/capstone_ws/install
+[2.550s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 256 installed packages in /opt/ros/foxy
+[2.559s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.973s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'jetmax_msgs' is in: /home/hiwonder/capstone_ws/install/jetmax_msgs
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding jetmax_msgs
+
+This may be promoted to an error in a future release of colcon-override-check.
+[2.979s] Level 5:colcon.colcon_core.verb:set package 'jetmax_msgs' build argument 'cmake_args' from command line to 'None'
+[2.980s] Level 5:colcon.colcon_core.verb:set package 'jetmax_msgs' build argument 'cmake_target' from command line to 'None'
+[2.980s] Level 5:colcon.colcon_core.verb:set package 'jetmax_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.980s] Level 5:colcon.colcon_core.verb:set package 'jetmax_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.980s] Level 5:colcon.colcon_core.verb:set package 'jetmax_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.980s] Level 5:colcon.colcon_core.verb:set package 'jetmax_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.980s] Level 5:colcon.colcon_core.verb:set package 'jetmax_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.981s] Level 5:colcon.colcon_core.verb:set package 'jetmax_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.981s] Level 5:colcon.colcon_core.verb:set package 'jetmax_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.981s] DEBUG:colcon.colcon_core.verb:Building package 'jetmax_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs', 'merge_install': False, 'path': '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/jetmax_msgs', 'symlink_install': False, 'test_result_base': None}
+[2.985s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.007s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.008s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/jetmax_msgs' with build type 'ament_cmake'
+[3.009s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/jetmax_msgs'
+[3.047s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.048s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.048s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy /usr/local/bin/cmake /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/jetmax_msgs -DCMAKE_INSTALL_PREFIX=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs
+[12.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy /usr/local/bin/cmake /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/jetmax_msgs -DCMAKE_INSTALL_PREFIX=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs
+[12.552s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy /usr/local/bin/cmake --build /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs -- -j4 -l4
+[46.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy /usr/local/bin/cmake --build /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs -- -j4 -l4
+[47.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy /usr/local/bin/cmake --install /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs
+[47.327s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jetmax_msgs)
+[47.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hiwonder/capstone_ws/install/jetmax_demo_3:/home/hiwonder/capstone_ws/install/demo1:/home/hiwonder/capstone_ws/install/jetmax_control:/opt/ros/foxy /usr/local/bin/cmake --install /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/jetmax_msgs
+[47.366s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs' for CMake module files
+[47.369s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs' for CMake config files
+[47.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetmax_msgs', 'cmake_prefix_path')
+[47.384s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/cmake_prefix_path.ps1'
+[47.389s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/cmake_prefix_path.dsv'
+[47.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/cmake_prefix_path.sh'
+[47.395s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib'
+[47.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetmax_msgs', 'ld_library_path_lib')
+[47.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/ld_library_path_lib.ps1'
+[47.404s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/ld_library_path_lib.dsv'
+[47.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/ld_library_path_lib.sh'
+[47.406s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/bin'
+[47.407s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/pkgconfig/jetmax_msgs.pc'
+[47.407s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages'
+[47.408s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetmax_msgs', 'pythonpath')
+[47.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/pythonpath.ps1'
+[47.415s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/pythonpath.dsv'
+[47.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/pythonpath.sh'
+[47.418s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/bin'
+[47.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.ps1'
+[47.431s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.dsv'
+[47.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.sh'
+[47.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.bash'
+[47.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.zsh'
+[47.450s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/colcon-core/packages/jetmax_msgs)
+[47.811s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jetmax_msgs)
+[47.822s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs' for CMake module files
+[47.825s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs' for CMake config files
+[47.829s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetmax_msgs', 'cmake_prefix_path')
+[47.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/cmake_prefix_path.ps1'
+[47.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/cmake_prefix_path.dsv'
+[47.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/cmake_prefix_path.sh'
+[47.840s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib'
+[47.841s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetmax_msgs', 'ld_library_path_lib')
+[47.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/ld_library_path_lib.ps1'
+[47.848s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/ld_library_path_lib.dsv'
+[47.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/ld_library_path_lib.sh'
+[47.851s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/bin'
+[47.851s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/pkgconfig/jetmax_msgs.pc'
+[47.852s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages'
+[47.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetmax_msgs', 'pythonpath')
+[47.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/pythonpath.ps1'
+[47.861s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/pythonpath.dsv'
+[47.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/hook/pythonpath.sh'
+[47.864s] Level 1:colcon.colcon_core.environment:checking '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/bin'
+[47.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.ps1'
+[47.874s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.dsv'
+[47.876s] INFO:colcon.colcon_core.shell:Creating package script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.sh'
+[47.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.bash'
+[47.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/jetmax_msgs/package.zsh'
+[47.881s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/share/colcon-core/packages/jetmax_msgs)
+[47.882s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[47.883s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[47.883s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[47.884s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[47.944s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[47.945s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[47.945s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[47.991s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[47.998s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/local_setup.ps1'
+[48.008s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/_local_setup_util_ps1.py'
+[48.019s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/setup.ps1'
+[48.030s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/local_setup.sh'
+[48.039s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/_local_setup_util_sh.py'
+[48.041s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/setup.sh'
+[48.051s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/local_setup.bash'
+[48.059s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/setup.bash'
+[48.072s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/local_setup.zsh'
+[48.079s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/setup.zsh'

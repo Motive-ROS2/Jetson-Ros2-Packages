@@ -1,0 +1,39 @@
+running egg_info
+creating ../build/demo1/demo1.egg-info
+writing ../build/demo1/demo1.egg-info/PKG-INFO
+writing dependency_links to ../build/demo1/demo1.egg-info/dependency_links.txt
+writing entry points to ../build/demo1/demo1.egg-info/entry_points.txt
+writing requirements to ../build/demo1/demo1.egg-info/requires.txt
+writing top-level names to ../build/demo1/demo1.egg-info/top_level.txt
+writing manifest file '../build/demo1/demo1.egg-info/SOURCES.txt'
+reading manifest file '../build/demo1/demo1.egg-info/SOURCES.txt'
+writing manifest file '../build/demo1/demo1.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build
+creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib
+creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1
+copying demo1/__init__.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1
+copying demo1/demo1_client.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1
+copying demo1/demo1_server.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1
+running install
+running install_lib
+creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1
+copying /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1/__init__.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1
+copying /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1/demo1_client.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1
+copying /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1/demo1_server.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1
+byte-compiling /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1/demo1_client.py to demo1_client.cpython-38.pyc
+byte-compiling /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1/demo1_server.py to demo1_server.cpython-38.pyc
+running install_data
+creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/share/ament_index
+creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/share/ament_index/resource_index
+creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/share/ament_index/resource_index/packages
+copying resource/demo1 -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/share/ament_index/resource_index/packages
+copying package.xml -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/share/demo1
+running install_egg_info
+Copying ../build/demo1/demo1.egg-info to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1-0.0.0-py3.8.egg-info
+running install_scripts
+Installing client script to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/demo1
+Installing srv script to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/demo1
+writing list of installed files to '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/install.log'

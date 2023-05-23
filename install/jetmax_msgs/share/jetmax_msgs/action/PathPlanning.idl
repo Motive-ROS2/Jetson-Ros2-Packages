@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from jetmax_msgs/action/PathPlanning.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module jetmax_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      " goal")
+    struct PathPlanning_Goal {
+      geometry_msgs::msg::Point object_pos;
+
+      sequence<geometry_msgs::msg::Point> robot_markers;
+    };
+    struct PathPlanning_Result {
+      @verbatim (language="comment", text=
+        " result")
+      int32 return_code;
+    };
+    struct PathPlanning_Feedback {
+      @verbatim (language="comment", text=
+        " feedback")
+      int32 update_status;
+    };
+  };
+};

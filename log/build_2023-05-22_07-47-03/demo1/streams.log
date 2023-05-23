@@ -1,0 +1,25 @@
+[2.836s] Invoking command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/demo1': PYTHONPATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/prefix_override:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_demo_3/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/optitrack_interfaces/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_srvs/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_control/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../build/demo1 build --build-base /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build install --record /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/install.log --install-scripts $base/lib/demo1 --single-version-externally-managed
+[3.790s] running egg_info
+[3.792s] writing ../build/demo1/demo1.egg-info/PKG-INFO
+[3.793s] writing dependency_links to ../build/demo1/demo1.egg-info/dependency_links.txt
+[3.794s] writing entry points to ../build/demo1/demo1.egg-info/entry_points.txt
+[3.794s] writing requirements to ../build/demo1/demo1.egg-info/requires.txt
+[3.795s] writing top-level names to ../build/demo1/demo1.egg-info/top_level.txt
+[3.951s] reading manifest file '../build/demo1/demo1.egg-info/SOURCES.txt'
+[3.954s] writing manifest file '../build/demo1/demo1.egg-info/SOURCES.txt'
+[3.955s] running build
+[3.955s] running build_py
+[3.956s] copying demo1/demo1_client.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1
+[3.957s] running install
+[3.960s] running install_lib
+[3.964s] copying /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1/demo1_client.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1
+[3.967s] byte-compiling /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1/demo1_client.py to demo1_client.cpython-38.pyc
+[3.976s] running install_data
+[3.978s] running install_egg_info
+[3.984s] removing '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1-0.0.0-py3.8.egg-info' (and everything under it)
+[3.985s] Copying ../build/demo1/demo1.egg-info to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1-0.0.0-py3.8.egg-info
+[3.989s] running install_scripts
+[4.055s] Installing client script to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/demo1
+[4.056s] Installing srv script to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/demo1
+[4.057s] writing list of installed files to '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/install.log'
+[4.153s] Invoked command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/demo1' returned '0': PYTHONPATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/prefix_override:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_demo_3/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/optitrack_interfaces/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_srvs/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_control/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/install/jetmax_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../build/demo1 build --build-base /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build install --record /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/install.log --install-scripts $base/lib/demo1 --single-version-externally-managed

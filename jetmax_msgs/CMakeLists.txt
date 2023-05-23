@@ -42,6 +42,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Position.msg"
   "action/PathPlanning.action"
   "srv/GetPosition.srv"
+  "srv/Demo1.srv"
   # add any dependencies here
   DEPENDENCIES geometry_msgs
 )

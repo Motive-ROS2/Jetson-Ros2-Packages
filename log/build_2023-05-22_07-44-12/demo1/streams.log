@@ -1,0 +1,41 @@
+[3.116s] Invoking command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/demo1': AMENT_PREFIX_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/prefix_override:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/demo1 build --build-base /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build install --record /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/install.log --install-scripts $base/lib/demo1 --single-version-externally-managed
+[4.045s] running egg_info
+[4.047s] creating ../build/demo1/demo1.egg-info
+[4.047s] writing ../build/demo1/demo1.egg-info/PKG-INFO
+[4.048s] writing dependency_links to ../build/demo1/demo1.egg-info/dependency_links.txt
+[4.048s] writing entry points to ../build/demo1/demo1.egg-info/entry_points.txt
+[4.049s] writing requirements to ../build/demo1/demo1.egg-info/requires.txt
+[4.049s] writing top-level names to ../build/demo1/demo1.egg-info/top_level.txt
+[4.063s] writing manifest file '../build/demo1/demo1.egg-info/SOURCES.txt'
+[4.216s] reading manifest file '../build/demo1/demo1.egg-info/SOURCES.txt'
+[4.219s] writing manifest file '../build/demo1/demo1.egg-info/SOURCES.txt'
+[4.220s] running build
+[4.221s] running build_py
+[4.221s] creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build
+[4.222s] creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib
+[4.222s] creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1
+[4.222s] copying demo1/__init__.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1
+[4.223s] copying demo1/demo1_client.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1
+[4.223s] copying demo1/demo1_server.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1
+[4.224s] running install
+[4.227s] running install_lib
+[4.230s] creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1
+[4.231s] copying /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1/__init__.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1
+[4.232s] copying /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1/demo1_client.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1
+[4.232s] copying /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build/lib/demo1/demo1_server.py -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1
+[4.234s] byte-compiling /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1/__init__.py to __init__.cpython-38.pyc
+[4.239s] byte-compiling /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1/demo1_client.py to demo1_client.cpython-38.pyc
+[4.244s] byte-compiling /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1/demo1_server.py to demo1_server.cpython-38.pyc
+[4.246s] running install_data
+[4.248s] creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/share/ament_index
+[4.249s] creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/share/ament_index/resource_index
+[4.249s] creating /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/share/ament_index/resource_index/packages
+[4.250s] copying resource/demo1 -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/share/ament_index/resource_index/packages
+[4.250s] copying package.xml -> /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/share/demo1
+[4.250s] running install_egg_info
+[4.255s] Copying ../build/demo1/demo1.egg-info to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages/demo1-0.0.0-py3.8.egg-info
+[4.259s] running install_scripts
+[4.327s] Installing client script to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/demo1
+[4.327s] Installing srv script to /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/demo1
+[4.328s] writing list of installed files to '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/install.log'
+[4.426s] Invoked command in '/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/demo1' returned '0': AMENT_PREFIX_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/prefix_override:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/demo1/lib/python3.8/site-packages:/home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/install/jetmax_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/demo1 build --build-base /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/build install --record /home/hiwonder/capstone_ws/src/Jetson-Ros2-Packages/build/demo1/install.log --install-scripts $base/lib/demo1 --single-version-externally-managed

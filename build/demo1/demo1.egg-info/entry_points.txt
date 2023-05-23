@@ -1,0 +1,4 @@
+[console_scripts]
+client = demo1.demo1_client:main
+srv = demo1.demo1_server:main
+

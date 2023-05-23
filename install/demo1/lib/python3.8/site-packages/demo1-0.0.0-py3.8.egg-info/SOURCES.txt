@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../build/demo1/demo1.egg-info/PKG-INFO
+../build/demo1/demo1.egg-info/SOURCES.txt
+../build/demo1/demo1.egg-info/dependency_links.txt
+../build/demo1/demo1.egg-info/entry_points.txt
+../build/demo1/demo1.egg-info/requires.txt
+../build/demo1/demo1.egg-info/top_level.txt
+../build/demo1/demo1.egg-info/zip-safe
+demo1/__init__.py
+demo1/demo1_client.py
+demo1/demo1_server.py
+resource/demo1
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

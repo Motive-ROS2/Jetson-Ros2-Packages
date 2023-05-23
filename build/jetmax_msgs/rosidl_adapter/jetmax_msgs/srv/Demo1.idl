@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from jetmax_msgs/srv/Demo1.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module jetmax_msgs {
+  module srv {
+    struct Demo1_Request {
+      geometry_msgs::msg::Point object_pos;
+
+      sequence<geometry_msgs::msg::Point> robot_markers;
+    };
+    struct Demo1_Response {
+      boolean success;
+    };
+  };
+};
