@@ -24,7 +24,7 @@ To run a simple demonstration of the robot moving, you can run these shell scrip
 * [demo2.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/new_structure/jetmax_control/jetmax_control/demo2.sh)
 
 ## Running jetmax_demo_3 (Motive Demo)
-This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Motive-Plugin) to track the position of an object and once it is within range of the robot, go and pick up the object.
+This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Motive-Plugin) to track the position of an object and once it is within range of the robot, go and pick up the object. The jetmax_control package does **not** need to be running for this.
 
 ### Requirements:
 * Jetmax Hiwonder robot has the suction gripper attached
@@ -36,6 +36,6 @@ This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Moti
 ### Setup:
 1. Install the Motive plug-in on the Jetmax Hiwonder robot in the same ROS2 workspace by following the [installation instructions](https://github.com/Motive-ROS2/Motive-Plugin#installation-instructions)
 2. Launch Motive on the host machine. Define the robot as 3 rigid bodies as defined below: (TODO: add a figure)
-  * test
+   * test
 4.
 `ros2 launch jetmax_demo_3 ip:=<ip address of motive streaming> robot_name:=<name of marker set in motive of the robot> rigid_body_id:=<id # of object to be tracked>`
