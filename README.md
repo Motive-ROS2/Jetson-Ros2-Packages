@@ -49,26 +49,3 @@ This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Moti
 Below is a conceptual diagram of how the system should be set up to successfuly run jetmax_demo_3 and use the Motive plug-in in general:
 
 ![Conceptual overview of demo setup](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/media/System%20Conceptual%20Overview.drawio.png)
-
-## Running demo1 (Motive Demo 2)
-This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Motive-Plugin) find the position of an object, pick it up, return to original location, and the move it to a new designated location or new object. The jetmax_control package does **not** need to be running for this.
-
-### Requirements:
-* Jetmax Hiwonder robot has the suction gripper attached
-* Have a Motive license and a host machine to run Motive on
-* Have a volume with Optitrack cameras connected to host machine running Motive
-* Have the Jetmax Hiwonder robot markered up properly so it can be detected in Motive as 3 rigid bodies
-* Have a markered object that can be detected in Motive as a rigid body and the robot can pick up the object with suction
-
-### Setup and Running:
-1. Install the Motive plug-in on the Jetmax Hiwonder robot in the same ROS2 workspace by following the [installation instructions](https://github.com/Motive-ROS2/Motive-Plugin#installation-instructions)
-2. Launch Motive on the host machine. Define the robot and object as 4 rigid bodies in Motive as defined below: (TODO: add a figure)
-   * Rigid body 1 is at the base of the robot arm. Call this rigid body "robot_base"
-   * Rigid body 2 is at the middle of the robot arm. Call this rigid body "robot_arm"
-   * Rigid body 3 is at the end of the robot arm above the gripper. Call this rigid body "robot_ee"
-   * Rigid body 4 is at the very center of the original object. Call this rigid body "object_pos"
-   * Rigid body 5 is at the very center of the final object. Call this rigid body "final_location"
-4. Make sure the robot can find the host machine running Motive be being on the same subnet (a good test is trying to ping the host machine).
-5. Enable streaming in Motive and set it to Unicast and set the ip to be one that the robot can find (i.e. not local).
-6. On the robot, launch the Motive plug-in with: `ros2 launch optitrack_plugin launch.py`
-7. Launch the demo with: `ros2 launch demo1 ip:=<ip address set in Motive streaming> robot_base:=<id# of rb 1> robot_arm:=<id# of rb 2> robot_ee:=<id# of rb 3> object_pos:=<id# of rb 4>` final_location:=<id# of rb 5>`. Be sure to define the values of the launch parameters to those that are set in Motive
