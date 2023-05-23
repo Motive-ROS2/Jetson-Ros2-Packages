@@ -1,17 +1,47 @@
-# jetmax_r2_packages
-ROS2 packages for controlling and running Motive demonstrations.
+# Jetson_Ros2_Packages (Testing)
+Same code as main branch, except that jetmax_demo_3 incorporates active tracking of the object in motive for real-time path updating. jetmax_demo_3 package is currently untested or is not working. ROS2 Packages for controlling the Jetmax Hiwonder robot with ROS2, as well as a demo package (jetmax_demo_3) that demonstrates use of the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Motive-Plugin). Seem the project [Wiki](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/wiki) for more information on the project and its purpose.
 
-**Requirements:**
-- Use the Hiwonder Jetmax robot: https://www.hiwonder.com/products/hiwonder-jetmax-jetson-nano-robot-arm-ros-open-source-vision-recognition-program-robot?variant=39645677715543
-- Make sure the robot is upgraded to Ubuntu 20.04 and has ROS2 Foxy installed
-- The hiwonder library is made compatible with ROS2
+## Pre-Requirements
+* Familiarity with [ROS2](https://docs.ros.org/en/foxy/index.html)
+* All packages must be running on the modified Jetmax Hiwonder robot. A modified Jetmax Hiwonder robot includes: 
+  * Robot has been updated to run ubuntu 20.0.4
+  * Robot has [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation.html) installed
+  * The hiwonder python module for controlling the robot has been changed to run with ROS2 instead of ROS1.
 
-**How To Run**
-- The jetmax_control package contains topics and services to control the robot and its various grippers
-- How to run the package: `ros2 run jetmax_control controller`
-- A few notes:
-  - DC motor 2 (servo 3) = vertical arm control (joint 3)
-  - DC motor 1 (servo 2) = arm base control (joint 2)
-  - serial_servo = base rotational motor (joint 1)
-- The jetmax_demo_3 is a demo using the ROS2 Motive plugin (https://github.com/Motive-ROS2/Motive-Plugin). The purpose of the demo is to actively track the position of the robot and a rigid body. See video here: (TODO: add)
-- To launch the demo: `ros2 launch jetmax_demo_3 ip:=<ip address of motive streaming> robot_name:=<name of marker set in motive of the robot> rigid_body_id:=<id # of object to be tracked>` 
+## Installation
+1. Clone repo in your ROS2 workspace
+2. build packages and source workspace
+
+## Running jetmax_control
+If you want to simply control the robot through ROS2, then the [jetmax_control](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/tree/main/jetmax_control) can be used which supplies a ROS2 interface for controlling each joint and motor of the Jetmax Hiwonder.
+
+The package can be launched with: `ros2 run jetmax_control controller`
+
+The package provides a list of topics which can be published to from the command line to move the robot (can run `ros2 topic list` to see all available topics).
+
+To run a simple demonstration of the robot moving, you can run these shell scripts after launching the jetmax_control package:
+* [demo1.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/jetmax_control/jetmax_control/demo1.sh)
+* [demo2.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/jetmax_control/jetmax_control/demo2.sh)
+
+## Running jetmax_demo_3 (Motive Demo)
+This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Motive-Plugin) to track the position of an object and once it is within range of the robot, go and pick up the object. The jetmax_control package does **not** need to be running for this.
+
+### Requirements:
+* Jetmax Hiwonder robot has the suction gripper attached
+* Have a Motive license and a host machine to run Motive on
+* Have a volume with Optitrack cameras connected to host machine running Motive
+* Have the Jetmax Hiwonder robot markered up properly so it can be detected in Motive as 3 rigid bodies
+* Have a markered object that can be detected in Motive as a rigid body and the robot can pick up the object with suction
+
+### Setup and Running:
+1. Install the Motive plug-in on the Jetmax Hiwonder robot in the same ROS2 workspace by following the [installation instructions](https://github.com/Motive-ROS2/Motive-Plugin#installation-instructions)
+2. Launch Motive on the host machine. Define the robot and object as 4 rigid bodies in Motive as defined below: (TODO: add a figure)
+   * Rigid body 1 is at the base of the robot arm. Call this rigid body "robot_base"
+   * Rigid body 2 is at the middle of the robot arm. Call this rigid body "robot_arm"
+   * Rigid body 3 is at the end of the robot arm above the gripper. Call this rigid body "robot_ee"
+   * Rigid body 4 is at the very center of the object. Call this rigid body "rigid_object_id"
+4. Make sure the robot can find the host machine running Motive be being on the same subnet (a good test is trying to ping the host machine).
+5. Enable streaming in Motive and set it to Unicast and set the ip to be one that the robot can find (i.e. not local).
+6. On the robot, launch the Motive plug-in with: `ros2 launch optitrack_plugin launch.py`
+7. Launch the demo with: `ros2 launch jetmax_demo_3 ip:=<ip address set in Motive streaming> robot_base:=<id# of rb 1> robot_arm:=<id# of rb 2> robot_ee:=<id# of rb 3> rigid_body_id:=<id# of rb 4>`. Be sure to define the values of the launch parameters to those that are set in Motive
+8. The demo should have launched and should then be looking for the object. To have the robot try to grap the object, move the object to about within 30cm of the robot and leave it there.
