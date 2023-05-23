@@ -48,4 +48,4 @@ This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Moti
 
 Below is a conceptual diagram of how the system should be set up to successfuly run jetmax_demo_3 and use the Motive plug-in in general:
 
-![Conceptual overview of demo setup](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/media/System%20Conceptual%20Overview.drawio.png "Conceptual Overview of Demo" | width=80)
+![Conceptual overview of demo setup](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/media/System%20Conceptual%20Overview.drawio.png | width=80)
