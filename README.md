@@ -12,7 +12,9 @@ ROS@ Packages for controlling the Jetmax Hiwonder Robot with ROS2, as well as a 
 If you want to simply control the robot through ROS2, then the [jetmax_control](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/tree/main/jetmax_control) can be used which supplies a ROS2 interface for controlling each joint and motor of the Jetmax Hiwonder.
 
 The package can be launched with: `ros2 run jetmax_control controller`
+
 The package provides a list of topics which can be published to from the command line to move the robot (can run `ros2 topic list` to see all available topics).
+
 To run a simple demonstration of the robot moving, you can run these shell scripts after launching the jetmax_control package:
 * [demo1.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/new_structure/jetmax_control/jetmax_control/demo1.sh)
 * [demo2.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/new_structure/jetmax_control/jetmax_control/demo2.sh)
