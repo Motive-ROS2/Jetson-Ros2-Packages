@@ -1,5 +1,5 @@
 # Jetson_Ros2_Packages (Testing)
-Same code as main branch, except that jetmax_demo_3 incorporates active tracking of the object in motive for real-time path updating. jetmax_demo_3 package is currently untested or is not working. ROS2 Packages for controlling the Jetmax Hiwonder robot with ROS2, as well as a demo package (jetmax_demo_3) that demonstrates use of the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Motive-Plugin). Seem the project [Wiki](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/wiki) for more information on the project and its purpose.
+Same code as main branch, except that jetmax_demo_3 incorporates active tracking of the object in motive for real-time path updating. jetmax_demo_3 package is currently untested or is not working. ROS2 Packages for controlling the Jetmax Hiwonder robot with ROS2, as well as a demo package (jetmax_demo_3) that demonstrates use of the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Motive-Plugin). See the project [Wiki](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/wiki) for more information on the project and its purpose.
 
 ## Pre-Requirements
 * Familiarity with [ROS2](https://docs.ros.org/en/foxy/index.html)
