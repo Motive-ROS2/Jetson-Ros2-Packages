@@ -19,9 +19,6 @@ from jetmax_msgs.action import PathPlanning
 class StateEngine(Node):
     def __init__(self):
         super().__init__("StateEngine")
-        # parameter for ip address of host running optitrack_plugin. Default: host running this demo
-        # (CHANGE ADAPTER TO ETH for jetson nano)
-        # default_ip = netifaces.ifaddresses("eth0")[netifaces.AF_INET][0]["addr"]
         self.declare_parameter("motive_ip_address", "")
         self.declare_parameter("rigid_object_id", 1)
         self.declare_parameter("robot_base", 2) # rigid body
@@ -80,11 +77,9 @@ class StateEngine(Node):
         self.get_logger().info("Found object within range at: {}".format(self.object_pos))
         
         # start to move to object:
-        #TODO: add feedback callback, and service for action server to use
+        #TODO: add feedback callback
         self.send_path_goal()
-        # finished for now - proceeds to spin indefinitely
-
-        #TODO: add states after action goal set in case it fails (object goes out of range/etc)
+        return
 
     def send_path_goal(self):
         goal_msg = PathPlanning.Goal()
@@ -201,7 +196,7 @@ class StateEngine(Node):
 def main(args=None):
     rclpy.init(args=args)
     behavior = StateEngine()
-    rclpy.spin(behavior)
+    # rclpy.spin(behavior)
     self.disconnect_motive()
     behavior.destroy_node()
     rclpy.shutdown()

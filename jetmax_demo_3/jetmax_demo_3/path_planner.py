@@ -26,7 +26,10 @@ class PathPlanner(Node):
         self.sucker = hiwonder.Sucker()
         self.robot_bounds = [30,10] # (in cm) reach from base [horizontal,vertical]. Based on aligning arm vector to point towards object
         self.marker_ee_offset = (-2,3.5,-9) # (in cm) [x,y,z] x = along arm, y = front of arm
-        self.meter_per_degree = 0.0196 # PLACEHOLDER TODO: Find actual value
+        self.meter_per_degree = 0.0196
+        self.obj_height_offset = 0.01 # in meters, from center of object. cube = 4cm
+        self.moved_tolerance = 0.005 # in meters
+        self.lower_obj_angle = 30 # in degrees, used to lower obj from home position w/o active tracking
 
         self.path_execution_as = ActionServer(self, PathPlanning, "pathPlanning", self.as_callback)
 
@@ -38,17 +41,19 @@ class PathPlanner(Node):
         # move robot base to align with object:
         base_angle = self.align_arm(goal.request.robot_markers, goal.request.object_pos)
         self.get_logger().info(f"Turning robot at angle: {base_angle}")
-        # ADD CHECK OBJ POS HERE
         feedback_msg.update_status = 0
         goal.publish_feedback(feedback_msg)
         # move robot arm to be above object:
-        self.hover_arm(goal.request.robot_markers, goal.request.object_pos)
-        # ADD CHECK OBJ POS HERE
+        hover_angle = self.hover_arm(goal.request.robot_markers, goal.request.object_pos)
+        self.get_logger().info(f"Moved joint 2 at angle: {hover_angle}")
         feedback_msg.update_status = 0
         goal.publish_feedback(feedback_msg)
-        # move robot arm down to object and activate suck: TODO
-        # ...
-        # ADD CHECK OBJ POS HERE
+        # move robot arm down to object and activate suck:
+        # Note: need to get new robot z-pos after hovering arm for precise location
+        lower_angle = self.lower_arm(goal.request.robot_markers, goal.request.object_pos)
+        self.get_logger().info(f"Moved joint 3 at angle: {lower_angle}")
+        # have object, move to home:
+        self.move_object()
         goal.succeed()
         result = PathPlanning.Result()
         result.return_code = 0
@@ -56,7 +61,6 @@ class PathPlanner(Node):
 
     # finds angle from robot arm to object using vector calc with the object and arm vectors
     # having same tail (the robot_base marker).
-    # Note: may have to inverse angle sign
     def align_arm(self, robot_markers, obj):
         # calculate angle:
         arm_vect = (robot_markers[2].x - robot_markers[0].x, robot_markers[2].y - robot_markers[0].y)
@@ -75,7 +79,7 @@ class PathPlanner(Node):
         time.sleep(3)
         return angle
 
-    # move via m/deg ? Assumption: motive pos is smaller closer to the robot
+    # move via m/deg. Assumption: motive pos is smaller closer to the robot
     def hover_arm(self, robot_markers, obj):
         # self.jetmax.joints[i]
         ee_marker = robot_markers[2]
@@ -87,6 +91,25 @@ class PathPlanner(Node):
         self.jetmax.set_joint_relatively(2, angle, 3)
         time.sleep(3)
         return angle
+
+    # assumption: object lower than gripper. Switch sign of angle?
+    def lower_arm(self, robot_markers, obj):
+        ee_height = robot_markers[2].z
+        obj_height = obj.z + self.obj_height_offset
+        angle = (ee_height - obj_height) / self.meter_per_degree
+        self.jetmax.set_joint_relatively(3, angle, 3)
+        time.sleep(3)
+        return angle
+
+    # assumption: robot sucker already touching object
+    def move_object(self):
+        self.sucker.set_state(True)
+        self.jetmax.go_home(3)
+        # put object down (gently):
+        self.jetmax.set_joint_relatively(3, self.lower_obj_angle, 3)
+        time.sleep(3)
+        self.sucker.set_state(False)
+        return
 
 def main(args=None):
     rclpy.init(args=args)
