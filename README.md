@@ -51,3 +51,7 @@ This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Moti
 Below is a conceptual diagram of how the system should be set up to successfuly run jetmax_demo_3 and use the Motive plug-in in general:
 
 ![Conceptual overview of demo setup](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/media/System%20Conceptual%20Overview.drawio.png)
+
+### Next Steps:
+The [new_structure](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/tree/new_structure) branch contains additional features for jetmax_demo_3 as well as an entirely new demo. The code is still in development. The addtional features for jetmax_demo_3 include:
+    * Active tracking of the rigid object - if the object moves while the robot is moving towards it, the robot will re-calculate its position and correct its movement to go towards the new position of the object
