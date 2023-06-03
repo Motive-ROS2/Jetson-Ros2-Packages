@@ -54,4 +54,4 @@ Below is a conceptual diagram of how the system should be set up to successfuly 
 
 ### Next Steps:
 The [new_structure](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/tree/new_structure) branch contains additional features for jetmax_demo_3 as well as an entirely new demo. The code is still in development. The addtional features for jetmax_demo_3 include:
-    * Active tracking of the rigid object - if the object moves while the robot is moving towards it, the robot will re-calculate its position and correct its movement to go towards the new position of the object
+* Active tracking of the rigid object - if the object moves while the robot is moving towards it, the robot will re-calculate its position and correct its movement to go towards the new position of the object
