@@ -21,8 +21,9 @@ The package provides a list of topics which can be published to from the command
 
 To run a simple demonstration of the robot moving, you can run these shell scripts after launching the jetmax_control package:
 * [demo1.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/jetmax_control/jetmax_control/demo1.sh)
-    * test   
+    * This script will test the basic functionality of all joint motors along with the suction gripper for the robot.
 * [demo2.sh](https://github.com/Motive-ROS2/Jetson-Ros2-Packages/blob/main/jetmax_control/jetmax_control/demo2.sh)
+    * This script will also test the basic functionality of all the joint motors for the robot using a different sequence of actions. The robot base should turn and the arm should move up and down. 
 
 ## Running jetmax_demo_3 (Motive Demo)
 This demo will use the [ROS2 Motive plug-in](https://github.com/Motive-ROS2/Motive-Plugin) to track the position of an object and once it is within range of the robot, go and pick up the object. The jetmax_control package does **not** need to be running for this.
